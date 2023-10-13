@@ -1,0 +1,117 @@
+
+body {
+background-color: #F7F7F7;
+margin: 10px;
+padding: 10px;
+}
+
+h2 {
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: italic;
+color: #080357;
+}
+
+h3 {
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #080357;
+}
+
+p {
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+button {
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+nav img {
+ cursor: pointer;
+ height: 50px;
+ display: flex;
+ align-items: center;
+}
+nav {
+ display: flex;
+ justify-content: space-between;
+}
+ nav .burgerMenu {
+display: flex;
+list-style: none;
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+nav .burgerMenu li a {
+display: inline-block;
+padding: 15px;
+font-size: 2rem;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .burgerMenu .closeMenu {
+font-size: 2rem;
+display: none;
+cursor: pointer;
+}
+
+.stotborn {
+  background-color: #080357;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding:0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+@media (max-width: 800px) {
+  nav .burgerMenu {
+    background-color: #F7F7F7;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: 0;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     display: none;
+     transition: top 1s ease;
+  }
+  nav .burgerMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+   nav .openMenu {
+    display: block;
+   }
+}
+
+.bliv-frivillig {
+  background-color: #EB282D;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding:0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10rem;
+}
