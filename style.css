@@ -24,9 +24,9 @@ font-style: normal;
 }
 
 button {
-font-family: "futura-pt", sans-serif;
-font-weight: 700;
-font-style: normal;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .top-menu li {
@@ -108,10 +108,10 @@ nav ul li a:hover {
   color: white;
   font-size: 20px;
   border: none;
-  padding: 0.9rem;
-  border-radius: 20px;
+  padding: 13px 20px;
+  border-radius: 40px;
   cursor: pointer;
-  margin-left: 60px;
+  margin-left: 40px;
   transition: transform 0.2s;
 }
 
