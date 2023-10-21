@@ -1,6 +1,6 @@
-const burgerMenu =document.querySelector('.burgerMenu')
-const openMenu =document.querySelector('.openMenu')
-const closeMenu =document.querySelector('.closeMenu')
+const burgerMenu = document.querySelector('.burgerMenu')
+const openMenu = document.querySelector('.openMenu')
+const closeMenu = document.querySelector('.closeMenu')
 
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);

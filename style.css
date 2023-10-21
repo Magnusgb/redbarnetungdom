@@ -1,8 +1,6 @@
-
 body {
-background-color: #F7F7F7;
-margin: 10px;
-padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 h2 {
@@ -31,83 +29,62 @@ font-weight: 700;
 font-style: normal;
 }
 
+.top-menu li {
+  font-size: 16px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #080357;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.top-menu li a {
+text-decoration: none;
+color: #080357;
+}
+
 nav img {
- cursor: pointer;
- height: 35px;
- display: flex;
- align-items: center;
+  height: 50px;
+  margin-top: 0.8rem;
 }
+
 nav {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  margin-top: 10px;
 }
- nav .burgerMenu {
-display: flex;
+
+nav li {
 list-style: none;
+display: inline-flex;
 font-family: "futura-pt", sans-serif;
-font-weight: 400;
+font-weight: 500;
 font-style: normal;
+color: black;
+font-size: 20px;
+margin-left: 60px;
 }
 
-nav .burgerMenu li a {
-display: inline-block;
-padding: 15px;
-font-size: 2rem;
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-nav .openMenu {
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
+nav ul li a:hover {
+  color: #EB282D;
 }
 
-nav .burgerMenu .closeMenu {
-font-size: 2rem;
-display: none;
-cursor: pointer;
-}
 
-.stotborn {
-  background-color: #080357;
-  color: white;
-  font-size: 1rem;
-  border: none;
-  padding:0.8rem;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-left: 2rem;
-}
-
-.stotborn:hover {
-  transform: scale(1.1);
-
-}
-
-@media (max-width: 800px) {
-  nav .burgerMenu {
-    background-color: #F7F7F7;
-     height: 100vh;
-     position: fixed;
-     top: 0;
-     right: 0;
-     left: 0;
-     z-index: 0;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     display: none;
-     transition: top 1s ease;
-  }
-  nav .burgerMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-   nav .openMenu {
-    display: block;
-   }
+.sogefunktion {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 1.4rem;
 }
 
 .bliv-frivillig {
@@ -119,4 +96,35 @@ cursor: pointer;
   border-radius: 20px;
   cursor: pointer;
   margin-right: 10rem;
+  transition: transform 0.2s;
+}
+
+.bliv-frivillig:hover {
+  transform: scale(1.1);
+}
+
+.stotborn {
+  background-color: #080357;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 60px;
+  transition: transform 0.2s;
+}
+
+.stotborn:hover {
+  transform: scale(1.1);
+}
+
+.sub-menu1 {
+  display: none;
+}
+
+nav:hover .sub-menu1{
+  display: block;
+  position: absolute;
+  background-color: #F7F7F7;
 }
