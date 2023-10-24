@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="megamenu.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://use.typekit.net/eti1pdf.css">
   <script src="https://kit.fontawesome.com/e470c73b41.js" crossorigin="anonymous"></script>
@@ -16,20 +16,22 @@
     <li><a href='#'>For Samarbejdspartnere</a></li>
     <li><a href='#'>Projektportalen</a></li>
   </div>
+
   <nav>
+    <div class="menu-bar">
   <img src="/billeder/Red Barnet Ungdom - Logo.png" alt="Logo Red Barnet Ungdom">
-  <!-- <div class="openMenu"><i class="fa-solid fa-bars" style="color: #080357;"></i></div> -->
-  <ul class="burgerMenu">
-    <li><a href="#">Bliv frivillig</a></li>
-    <i class="fa-solid fa-arrow-right fa-rotate-90 fa-sm" style="color: #000000;"></i>
+  <ul>
+    <li><a href="#">Bliv frivillig</a><i id="arrow" class="fa-solid fa-arrow-right fa-rotate-90 fa-sm" style="color: #000000;"></i>
+    </li>
       <div class="sub-menu1">
-        <div class="CTA">
+      <div class="CTA">
           <h2>Bliv Frivillig</h2>
+          <p1>Vil du gerne være frivillig</p1>
+          <p2>og hjælpe børn og unge?</p2>  
           <span></span>
-          <p1>Vil du gerne være frivillig og hjælpe børn og unge?</p1>
         </div>
         <ul>
-          <h2>Læring</h2>
+          <h3>Læring</h3>
           <li><a href="#">Lektievenner</a></li>
           <li><a href="#">Læringscafeer</a></li>
           <li><a href="#">Mobsquad</a></li>
@@ -37,41 +39,50 @@
           <li><a href="#">Studievenner</a></li>
         </ul>
         <ul>
-          <h2>Børn på flugt</h2>
+          <h3>Børn på flugt</h3>
           <li><a href="#">Børn på asylcentre</a></li>
           <li><a href="#">Velkomstvenner</a></li>
           <li><a href="#">Teengrupper</a></li>
           <li><a href="#">Weekendcamps</a></li>
         </ul>
         <ul>
-          <h2>Barnets ven</h2>
+          <h3>Barnets ven</h3>
           <li><a href="#">Barnets ven</a></li>
         </ul>
         <ul>
-          <h2>Børn på krisecentre</h2>
+          <h3>Børn på krisecentre</h3>
           <li><a href="#">Børn på krisecentre</a></li>
         </ul>
         <ul>
-          <h2>Lokalforeninger</h2>
+          <h3>Lokalforeninger</h3>
           <li><a href="#">Lokalforeninger</a></li>
         </ul>
       </div>
-    <li><a href="#">Blev medlem</a></li>
-    <i class="fa-solid fa-arrow-right fa-rotate-90 fa-sm" style="color: #000000;"></i>
-    <li><a href="#">Podcast</a></li>
-    <i class="fa-solid fa-arrow-right fa-rotate-90 fa-sm" style="color: #000000;"></i>
-    <li><a href="#">Webshop</a></li>
+    <li><a href="#">Blev medlem</a><i id="arrow" class="fa-solid fa-arrow-right fa-rotate-90 fa-sm" style="color: #000000;"></i></li>
+    <li><a href="#">Podcast</a><i id="arrow" class="fa-solid fa-arrow-right fa-rotate-90 fa-sm" style="color: #000000;"></i>
+    </li>
+      <div class="sub-menu2">
+      <div class="CTA">
+          <h2>Podcast</h2>
+          <p1>Vi er her sammen podcast<br> <b>Nye afsnit hver uge!</b> </p1>
+          <span></span>
+        </div>
+        <ul>
+          <h3>Podcast</h3>
+          <li><a href="#">Nyheder</a></li>
+          <li><a href="#">Lyt her</a></li>
+        </ul>
+      </div>
+     <li><a href="#">Webshop</a></li>
     <li><a href="#">Om os</a></li>
-    <button class="stotborn">Støt børnene</button>
-    <div class="sogefunktion"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></div> 
-
-    <!-- <div class="closeMenu"><i class="fa-solid fa-x" style="color: #080357;"></i></div>-->
-
   </ul>
+  <button class="stotborn">Støt børnene</button>
+  <div class="sogefunktion"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></div> 
+</div>
 </nav>
 </header>
 <body>
-  <!---
+ <!--
 <div id="herobanner-forside">
   <img src="/forside-billeder/herobanner-forside.png" alt="To piger fra Red Barnet Ungdom">
   <h2>Vi mangler dig og dit <br> frivillige <b>hjerte</b></h2>

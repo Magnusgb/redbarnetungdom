@@ -50,17 +50,16 @@ text-decoration: none;
 color: #080357;
 }
 
-nav img {
+.menu-bar img {
   height: 50px;
-  margin-top: 0.8rem;
 }
 
-nav {
+.menu-bar {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-nav li {
+.menu-bar ul li {
 list-style: none;
 display: inline-flex;
 font-family: "futura-pt", sans-serif;
@@ -68,23 +67,23 @@ font-weight: 500;
 font-style: normal;
 color: black;
 font-size: 20px;
-margin-left: 60px;
+width: 160px;
 }
 
-nav ul li a {
+.menu-bar ul li a {
   text-decoration: none;
   color: black;
 }
 
-nav ul li a:hover {
+.menu-bar ul li a:hover {
   color: #EB282D;
 }
 
-
 .sogefunktion {
   display: inline-block;
-  margin-left: 40px;
   font-size: 1.4rem;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .bliv-frivillig {
@@ -108,11 +107,12 @@ nav ul li a:hover {
   color: white;
   font-size: 20px;
   border: none;
-  padding: 13px 20px;
-  border-radius: 40px;
+  height: 50px;
+  width: 130px;
+  border-radius: 35px;
   cursor: pointer;
-  margin-left: 40px;
   transition: transform 0.2s;
+  margin-left: -40px;
 }
 
 .stotborn:hover {
@@ -120,11 +120,91 @@ nav ul li a:hover {
 }
 
 .sub-menu1 {
+display: none;
+}
+
+.menu-bar ul:hover .sub-menu1 {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 40vh;
+  left: 0;
+  justify-content: space-around;
+  background-color: #F7F7F7;
+}
+
+.menu-bar ul:hover .sub-menu1 li {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  
+}
+
+.menu-bar ul:hover .sub-menu1 h2 {
+  font-size: 35px;
+}
+
+.menu-bar ul:hover .sub-menu1 h3 {
+  font-size: 20px;
+} 
+
+.menu-bar ul:hover .sub-menu1 li  {
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #080357;
+}
+
+.sub-menu1 p1 {
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+.CTA h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 20px;
+
+}
+
+.CTA p1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 20px;
+  
+}
+
+.CTA p2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  display: block;
+  margin-left: 20px;
+
+}
+
+.CTA span {
+  display: block;
+  width: 1px; 
+  height: 230px; 
+  background-color: #080357; 
+margin-top: -130px;
+  margin-left: 265px;
+}
+
+#arrow {
+  margin-left: -9px;
+  font-size: 16px;
+}
+
+.sub-menu2 {
   display: none;
 }
 
-nav:hover .sub-menu1{
-  display: block;
-  position: absolute;
-  background-color: #F7F7F7;
-}
