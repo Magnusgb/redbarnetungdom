@@ -22,11 +22,12 @@ p {
     font-style: normal; 
 }
 
-.nyheder_overksift{
-color:#080357;
-font-weight:bold;
-text-align: center;
-font-size: 50px;
+.nyheder{
+    color:#080357;
+    font-weight:bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .image-container-nyheder{
@@ -37,16 +38,37 @@ font-size: 50px;
     display: inline-block;
     margin: 0;
     padding: 0;
-    object-fit: cover;
 }
 
-.container img{
-    object-fit: cover;
+.nyheder-overskift{
+    color: #080357;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-.img{
-    width: auto;
-    height: auto;
+.nyheder-tekst{
+    text-align: left;
+    margin-bottom: 30px;
 }
-        
-         
+
+.nyheder-knap {
+    background-color: #080357;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 30px;
+}
+
+.nyheder-knap:hover {
+    transform: scale(1.1);
+}
+
