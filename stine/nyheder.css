@@ -77,3 +77,19 @@ p {
     transform: scale(1.1);
 }
 
+/*billeder med knap*/
+
+.citat{
+    color: #080357;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.red-barnet-citat{
+    color: #080357;
+    font-style: normal;
+    text-align: center;
+    margin-left: 100px;
+    font-size: 16px;
+}
