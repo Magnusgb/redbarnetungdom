@@ -32,12 +32,14 @@ p {
 
 .image-container-nyheder{
     text-align: center;
+    display: inline-block;
+    position: relative;
 }
 
 .image-container-nyheder img{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+    display:block;
+    max-width:100%;
+    height: auto;
 }
 
 .nyheder-overskift{
@@ -52,6 +54,8 @@ p {
 .nyheder-tekst{
     text-align: left;
     margin-bottom: 30px;
+    position: relative;
+
 }
 
 .nyheder-knap {
@@ -66,17 +70,10 @@ p {
     cursor: pointer;
     transition: transform 0.2s;
     margin-top: 30px;
+
 }
 
 .nyheder-knap:hover {
     transform: scale(1.1);
 }
 
-@media (min-width: 360px) {
-  
-
-
-    
-      
-
-}
