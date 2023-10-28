@@ -1,0 +1,95 @@
+Body { 
+    Margin: 20px; 
+} 
+
+h2 {  
+    font-family: futura-pt, sans-serif; 
+    font-weight: 500; 
+    font-style: normal; 
+} 
+        
+         
+h3 { 
+    Font-family: futura-pt, sans-serif; 
+    font-weight: 500; 
+    font-style: italic; 
+} 
+        
+         
+p { 
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+.nyheder{
+    color:#080357;
+    font-weight:bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.image-container-nyheder{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.image-container-nyheder img{
+    display:block;
+    max-width:100%;
+    height: auto;
+}
+
+.nyheder-overskift{
+    color: #080357;
+    font-style: normal;
+    font-weight:bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.nyheder-tekst{
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.nyheder-knap {
+    background-color: #080357;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 30px;
+
+}
+
+.nyheder-knap:hover {
+    transform: scale(1.1);
+}
+
+/*billeder med knap*/
+
+.citat{
+    color: #080357;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.red-barnet-citat{
+    color: #080357;
+    font-style: normal;
+    text-align: center;
+    margin-left: 100px;
+    font-size: 16px;
+}
