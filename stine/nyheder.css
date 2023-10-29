@@ -70,6 +70,7 @@ p {
     cursor: pointer;
     transition: transform 0.2s;
     margin-top: 30px;
+    
 
 }
 
@@ -77,13 +78,15 @@ p {
     transform: scale(1.1);
 }
 
-/*billeder med knap*/
+
+/*Citat*/
 
 .citat{
     color: #080357;
     font-weight: bolder;
     text-align: center;
     margin-bottom: -10px;
+    font-size: 30px;
 }
 
 .red-barnet-citat{
@@ -91,5 +94,42 @@ p {
     font-style: normal;
     text-align: center;
     margin-left: 100px;
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: -40px;
 }
+
+/*billeder med knap*/
+
+.image-container-med-knap{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+.image-container-med-knap img{
+    height: 320px;
+    margin-top: 100px;
+}
+
+
+.billeder-knap {
+    background-color: #EB282D;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: -20px;
+
+}
+
+.billeder-knap:hover {
+    transform: scale(1.1);
+}
+
