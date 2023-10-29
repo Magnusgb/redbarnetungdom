@@ -70,6 +70,7 @@ p {
     cursor: pointer;
     transition: transform 0.2s;
     margin-top: 30px;
+    
 
 }
 
@@ -77,7 +78,8 @@ p {
     transform: scale(1.1);
 }
 
-/*billeder med knap*/
+
+/*Citat*/
 
 .citat{
     color: #080357;
@@ -92,4 +94,35 @@ p {
     text-align: center;
     margin-left: 100px;
     font-size: 16px;
+    margin-bottom: -40px;
+}
+
+/*billeder med knap*/
+
+.image-container-med-knap{
+position: relative;
+}
+
+.image-container-med-knap img{
+    height: 320px;
+    margin-top: 100px;
+}
+
+
+
+.billeder-knap {
+    background-color: #EB282D;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.billeder-knap:hover {
+    transform: scale(1.1);
 }
