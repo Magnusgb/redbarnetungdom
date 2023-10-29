@@ -93,25 +93,23 @@ margin-left: 50px;
 .container-skriv1 p {
   margin: 15px;
   text-align: left;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 
 
 
 @media (min-width: 768px) {
+.container-skriv1 {
+ width: 400px;
+}
 
 .section-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-content: center;
-}
-.container-skriv1 {
-  width: 350px;
   display: flex;
-margin-left: 50px;
-}
+  justify-content: center;
+  gap: 90px;
 
+}
 .section-4h2 {
   text-align: center;
 }

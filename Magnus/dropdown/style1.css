@@ -16,6 +16,10 @@ li {
     list-style: none;
 }
 
+button {
+  font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
+}
+
 .nav-list {
     display: flex;
     justify-content: space-around;
@@ -73,7 +77,7 @@ a:hover {
     position: absolute;
     width: 90vw;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: white;  
   }
   .nav-item-dropdown:hover .sub-menu li a {
     font-size: 16px;
@@ -88,6 +92,8 @@ a:hover {
   .nav-item-dropdown:hover .sub-menu h3 {
     color: #080357;
   }
+
+ 
   .CTA h2 {
     font-family: futura-pt, sans-serif;
     font-weight: 600;
