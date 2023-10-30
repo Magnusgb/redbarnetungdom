@@ -22,7 +22,7 @@ p {
     font-style: normal; 
 }
 
-/*nyheder*/
+/*nyheder section*/
 
 
 .nyheder{
@@ -33,17 +33,33 @@ p {
     margin-bottom: 50px;
 }
 
+.nyheder-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .image-container-nyheder{
     text-align: center; 
-    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    max-width: 320px;
     margin: 0 auto;
 }
 
 .image-container-nyheder img{
     display:block;
-    max-width:320px;
+    width:100%;
     height: auto;
+    justify-content: center;
 }
+
+.nyheder-container .image-container-nyheder{
+    position: relative;
+    margin: 0;
+}
+
 
 .nyheder-overskift{
     color: #080357;
@@ -72,14 +88,60 @@ p {
     border-radius: 35px;
     cursor: pointer;
     transition: transform 0.2s;
-    margin: 60px auto 30px;
+    margin: 30px auto 30px;
     display: block;
 }
+
+/*Responsiv nyheder*/
 
 .nyheder-knap:hover {
     transform: scale(1.1);
 }
 
+@media (min-width: 768px) {
+    .image-container-nyheder{
+        max-width: 222px;
+    } 
+}
+
+@media (min-width: 1024px) {
+    .nyheder{
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
+
+    .image-container-nyheder{
+        max-width: 410px;
+    }
+
+    .nyheder-tekst {
+        margin-bottom: 30px;
+        margin-right: 0px;
+        max-width: 410px;
+        font-size: 20px;
+    }
+    
+    .nyheder-overskift{
+        margin-top: 25px;
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    .nyheder-knap {
+        background-color: #080357;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        height: 50px;
+        width: 300px;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        margin: 30px auto 30px;
+        display: block;
+    }
+}
 
 
 
@@ -105,10 +167,10 @@ p {
 /*billeder med knap*/
 
 .image-container-med-knap{
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -152,23 +214,23 @@ text-align: center;
     transform: scale(1.1);
 }
 
-
+/* Responsiv billeder med knap*/
 
 
 @media (min-width: 768px) {
     .citat{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     .red-barnet-citat{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .image-container-med-knap img{
-        height: 180px;
+        height: 200px;
         margin-top: 20px;
         justify-content: center;
-      
+        margin: -10px;
     }
 
     .billeder-knap {
@@ -193,14 +255,14 @@ text-align: center;
         height: 360px;
         margin-top: 20px;
         justify-content: center;
+        margin: 10px;
     }
 
     .billeder-knap {
         font-size: 20px;
         height: 50px;
         width: 200px;
-       
-    
+        margin-top: -40px;
     }
 }
 
