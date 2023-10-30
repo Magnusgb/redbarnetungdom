@@ -14,6 +14,9 @@ h2 {
 p {
     font-family: "nunito-sans", sans-serif; font-weight: 400; font-style: normal;
   }
+p1 {
+    font-family: "nunito-sans", sans-serif; font-weight: 400; font-style: normal;
+  }
   
 button {
     font-family: "futura-pt", sans-serif; font-weight: 600; font-style: normal;
@@ -96,31 +99,55 @@ margin-left: 50px;
   line-height: 35px;
 }
 
-
-
-
 @media (min-width: 768px) {
-.container-skriv1 {
- width: 400px;
+.kort {
+width: 650px;
+height: 500px;
 }
 
-.section-4 {
+.indhold {
   display: flex;
-  justify-content: center;
-  gap: 90px;
-
-}
-.section-4h2 {
-  text-align: center;
-}
+  flex-direction: column;
+  margin-top: -50px;
 }
 
+.baggrund {
+  display: flex;
+  gap: 50px;
+}
+
+.indhold h2 {
+font-size: 40px;
+}
+
+.indhold p1 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.content {
+  margin-bottom: 30px;
+}
+.h2-mobil {
+  display: none;
+}
+}
 
 @media (min-width: 1024px)  {
   .section-1-text-2 br{
     display: block;
   }
+  .section-4 {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
 
+  .container-skriv1 {
+    width: 400px;
+   }
+  .section-4h2 {
+    text-align: center;
+  }
 
 }
  
