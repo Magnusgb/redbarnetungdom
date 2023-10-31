@@ -101,14 +101,14 @@ margin-left: 50px;
 
 @media (min-width: 768px) {
 .kort {
-width: 700px;
+width: 650px;
 height: 500px;
 }
 
 .indhold {
   display: flex;
   flex-direction: column;
-  margin-top: -55px;
+  margin-top: -50px;
 }
 
 .baggrund {
@@ -125,7 +125,7 @@ font-size: 40px;
   margin-bottom: 20px;
 }
 .content {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .h2-mobil {
   display: none;
