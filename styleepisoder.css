@@ -27,6 +27,8 @@ h1 {
   text-align: center;
   color: #080357;
   font-size:30px;
+  font-family: "futura-pt",sans-serif;
+
   
   }
 h2 {
@@ -47,6 +49,7 @@ h3 {
   font-size: 15px;
 }
 h4 {
+  font-family: "futura-pt",sans-serif;
     text-align: center;
     color: #080357;
     font-size:25px;
