@@ -1,5 +1,5 @@
 body {
-  background-color: #afacac;
+  background-color: #f7f7f7;
 }
 
 header {
@@ -19,7 +19,6 @@ li {
 button {
   font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
 }
-
 .nav-list {
     display: flex;
     justify-content: space-around;
@@ -30,6 +29,7 @@ a:hover {
     color: #eb282d;
 }
 
+ 
 .nav-button {
     background-color: #080357;
     color: white;
@@ -72,12 +72,15 @@ a:hover {
     display: none;
   }
 
+
   .nav-item-dropdown:hover .sub-menu {
     display: flex;
     position: absolute;
     width: 90vw;
     justify-content: space-evenly;
-    background-color: white;  
+    background-color: white;
+    left: 95px;
+    margin: 15px 0px;
   }
   .nav-item-dropdown:hover .sub-menu li a {
     font-size: 16px;
@@ -92,7 +95,6 @@ a:hover {
   .nav-item-dropdown:hover .sub-menu h3 {
     color: #080357;
   }
-
  
   .CTA h2 {
     font-family: futura-pt, sans-serif;
@@ -138,6 +140,7 @@ a:hover {
     height: 30vh;
     background-color: white;
     justify-content: flex-start;
+    left: 95px;
   }
   .nav-item-dropdown:hover .sub-menu2 li a {
     font-size: 16px;
