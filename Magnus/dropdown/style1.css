@@ -1,12 +1,3 @@
-body {
-  background-color: #f7f7f7;
-}
-
-header {
-    font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
-    margin: 20;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -29,7 +20,6 @@ a:hover {
     color: #eb282d;
 }
 
- 
 .nav-button {
     background-color: #080357;
     color: white;
@@ -189,4 +179,203 @@ a:hover {
     background-color: #080357; 
     margin-top: -110px;
     margin-left: 270px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .navbar {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1200px){
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+      display: block;
+    }
+  
+    .stot{
+      background-color: #080357;
+      color: white;
+      border: none;
+      height:35px;
+      width: 100px;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      float: right;
+      margin-right: 60px;
+     
+    }
+    .stot:hover {
+      transform: scale(1.1);
+    }
+    .sub-menu  {
+      display:none;
+    }
+  
+    .forside-nav:hover .sub-menu {
+      display: block;
+      position: absolute;
+      background-color: #fff;
+    }
+  
+    .sub-menu {
+      text-align: left;
+    }
+  
+    .sub-menu ul {
+      padding: 0;
+    }
+  
+    .sub-menu2  {
+    display: none;
+    }
+  
+    .podcast:hover .sub-menu2 {
+      display: block;
+    }
+  
+    .sub-menu2 li {
+      text-align: left;
+    }
+  
+    .sub-menu2 ul {
+      padding: 0;
+    }
+  
+  
+    
+  
+    /*checkboxen, der er skjult*/
+    .navbar-container input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 12px;
+      right: 18px;
+      z-index: 5;
+      opacity: 0;
+    }
+  
+  /*selve burgermenuen*/
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    /*linjerne i burgermenuen*/
+    .navbar-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #080357;
+    }
+  
+    .navbar-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .menu-items:hover .stot {
+      display: none;
+    }
+  
+    /*menuen der kommer frem, nÃ¥r man trykker pÃ¥ burgermenuen*/
+    .navbar .menu-items {
+      background-color:#fff;
+      height: 100vh;
+      width: 100vw;
+      transform: translate(150%);
+      gap: 30px;
+      flex-direction: column;
+    align-items: center;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    /*links*/
+    .navbar .menu-items a {
+      font-family: "nunito-sans", sans-serif; 
+      font-weight: 400; 
+      font-style: normal;
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+  
+    }
+  
+    .sub-menu h2 {
+      color: #080357;
+      font-family: "futura-pt", sans-serif; 
+      font-weight: 700;
+      font-style: normal;
+    }
+  
+    .sub-menu p1{
+      font-family: "nunito-sans", sans-serif; 
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .sub-menu p2 {
+      font-family: "nunito-sans", sans-serif; 
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+  
+    .sub-menu ul {
+      color: #080357;
+      font-family: "futura-pt", sans-serif; 
+      font-weight: 700;
+      font-style: normal;
+    }
+  
+    /*listen*/
+    .navbar .menu-items li{
+      list-style: none;
+      padding: 4px 0px;
+    }
+  
+  .menu-items a:hover
+      {color: #EB282D;}
+  
+  .menu-items a:active
+      {color: #EB282D;}
+  
+    
+    /*nÃ¥r checkboxen er checked*/
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+    }
   }
