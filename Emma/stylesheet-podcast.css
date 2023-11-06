@@ -651,6 +651,24 @@ h3 {
     width: 100%
   }
 
+  .text-center h1{
+    text-align: center;
+    color: #080357;
+    font-size:30px;
+    font-family: "futura-pt",sans-serif;
+  }
+    .text-center h4{
+      font-family: "futura-pt",sans-serif;
+        text-align: left;
+        color: #080357;
+        font-size:25px;
+     }   
+.container, button {
+text-align: center;
+  
+
+}
+
 .ompodcast-overskrift{
   margin-left: 130px;
   margin-top: 25px;
