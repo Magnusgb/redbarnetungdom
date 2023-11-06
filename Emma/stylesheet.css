@@ -85,221 +85,219 @@ p, p1 {
     }
 
 /* Megamenu Web*/
-
 header {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-  font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
+font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
 }
 .nav-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a:hover {
-    color: #eb282d;
+  color: #eb282d;
 }
 
 .nav-button {
-    background-color: #080357;
-    color: white;
-    border: none;
-    height:40px;
-    width: 100px;
-    border-radius: 35px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .nav-button:hover {
-    transform: scale(1.1);
-  }
+  background-color: #080357;
+  color: white;
+  border: none;
+  height:40px;
+  width: 100px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 
-  .top-menu li {
-    font-size: 14px;
-    margin-right: 20px;
-    padding-right: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #080357;
-  }
-  
-  .top-menu {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
-  
-  .top-menu li a {
-  text-decoration: none;
+.nav-button:hover {
+  transform: scale(1.1);
+}
+
+.top-menu li {
+  font-size: 14px;
+  margin-right: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: #080357;
-  }
+}
 
-  .sub-menu {
-    display: none;
-  }
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
 
-  .nav-item-dropdown:hover .sub-menu {
-    display: flex;
-    position: absolute;
-    width: 90vw;
-    height: 45vh;
-    justify-content: space-evenly;
-    background-color: white;
-    left: 95px;
-    margin: 15px;
-  }
+.top-menu li a {
+text-decoration: none;
+color: #080357;
+}
 
-  .nav-item-dropdown:hover .sub-menu li a {
-    margin-top: 10px;
-  }
+.sub-menu {
+  display: none;
+}
 
-  .nav-item-dropdown:hover .sub-menu ul {
-    margin-top: 10px;
-  }
+.nav-item-dropdown:hover .sub-menu {
+  display: flex;
+  position: absolute;
+  width: 90vw;
+  height: 45vh;
+  justify-content: space-evenly;
+  background-color: white;
+  left: 95px;
+  margin: 15px;
+}
+
+.nav-item-dropdown:hover .sub-menu li a {
+  margin-top: 10px;
+}
+
+.nav-item-dropdown:hover .sub-menu ul {
+  margin-top: 10px;
+}
+
+.sub.menu ul {
+  margin-top: 50px;
+}
+
+.nav-item-dropdown {
+  padding: 15px;
+}
+.nav-item-dropdown:hover .sub-menu li a {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+}
+
+.nav-item-dropdown:hover .sub-menu h3 {
+  color: #080357;
+}
+
+.CTA h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  color: #080357;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.CTA p1 {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+}
+
+.CTA p2 {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+  display: block;  
+}
+
+.CTA span {
+  position: absolute;
+  display: inline-block;
+  width: 2px; 
+  height: 250px; 
+  background-color: #080357; 
+  margin-top: -40px;
+  margin-left: 40px;
+}
+
+.sub-menu2 {
+  display: none;
+}
+
+.nav-item-dropdown:hover .sub-menu2 {
+  display: flex;
+  position: absolute;
+  width: 90vw;
+  height: 30vh;
+  background-color: white;
+  justify-content: flex-start;
+  left: 95px;
+  margin-top: 15px;
+}
+.nav-item-dropdown:hover .sub-menu2 li a {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+}
+
+.nav-item-dropdown:hover .sub-menu2 ul {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.nav-item-dropdown:hover .sub-menu2 h3 {
+  color: #080357;
+}
+.CTA-2 h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  color: #080357;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.CTA-2 p1 {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.CTA-2 p2 {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+  display: block;  
+  margin-left: 30px;
  
-  .sub.menu ul {
-    margin-top: 50px;
-  }
+}
 
-  .nav-item-dropdown {
-    padding: 15px;
-  }
-  .nav-item-dropdown:hover .sub-menu li a {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-  }
-
-  .nav-item-dropdown:hover .sub-menu h3 {
-    color: #080357;
-  }
- 
-  .CTA h2 {
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    color: #080357;
-    margin-top: 10px;
-    margin-right: 50px;
-  }
-
-  .CTA p1 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-  }
-  
-  .CTA p2 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    display: block;  
-  }
-  
-  .CTA span {
-    position: absolute;
-    display: inline-block;
-    width: 2px; 
-    height: 280px; 
-    background-color: #080357; 
-    margin-top: -80px;
-    margin-left: 220px;
-  }
-
-  .sub-menu2 {
-    display: none;
-  }
-
-  .nav-item-dropdown:hover .sub-menu2 {
-    display: flex;
-    position: absolute;
-    width: 90vw;
-    height: 30vh;
-    background-color: white;
-    justify-content: flex-start;
-    left: 95px;
-    margin-top: 15px;
-  }
-  .nav-item-dropdown:hover .sub-menu2 li a {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-  }
-
-  .nav-item-dropdown:hover .sub-menu2 ul {
-    margin-left: 50px;
-    margin-top: 20px;
-  }
-
-  .nav-item-dropdown:hover .sub-menu2 h3 {
-    color: #080357;
-  }
-  .CTA-2 h2 {
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    color: #080357;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-
-  .CTA-2 p1 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  
-  .CTA-2 p2 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    display: block;  
-    margin-left: 30px;
-   
-  }
-  
-  .CTA-2 span {
-    position: absolute;
-    display: inline-block;
-    width: 2px; 
-    height: 180px; 
-    background-color: #080357;
-    margin-left: 260px;
-    margin-top: -90px;
-  }
-        
+.CTA-2 span {
+  position: absolute;
+  display: inline-block;
+  width: 2px; 
+  height: 180px; 
+  background-color: #080357;
+  margin-left: 260px;
+  margin-top: -90px;
+}
 
 /*HERO-BANNER styling*/
 
@@ -389,6 +387,7 @@ a:hover {
   font-size: 30px; 
 }
 }
+
 
 /*Citat*/
 .citat{
@@ -731,7 +730,7 @@ margin-bottom: 35px;
 
 }
 
-/* Sektion 1 Hjælp børd der har det svært*/
+/* Sektion 1 Hjælp børn der har det svært*/
 
 .section-1 h2 {
   font-size: 30px;
@@ -1218,7 +1217,5 @@ font-size: 40px;
   .top-menu {
     display: none;
   }
-  nav {
-  display: none;
-}
+  
 }
