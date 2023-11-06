@@ -641,6 +641,7 @@ h3 {
     color: #FFF9A5;
   }
 @media (min-width: 768px) {
+}
   #sektion-frivillig-web {
     display: flex;
     flex-direction: row-reverse;
@@ -649,7 +650,6 @@ h3 {
    .frivillig-billede {
     width: 100%
   }
-}
 
 .ompodcast-overskrift{
   margin-left: 130px;
