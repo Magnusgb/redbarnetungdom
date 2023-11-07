@@ -970,3 +970,128 @@ flex-direction: row;
 .p-5 {
   padding: 4rem;
 }
+
+.search-box{  /* placering af søgefletet */
+  height: 40px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
+}
+
+
+
+.search-box.active{  /* længde på søgefletet når det er aktivt */
+  width: 250px;
+}
+
+
+.search-box input{  /* styles i søgefeltet */
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color:#080357;
+  color: #242424;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px ;
+  opacity: 0;
+  margin-left: -20px;
+  transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
+}
+
+.search-box input.active{ 
+  opacity: 1;
+
+}
+
+.search-box .search-btn{ /* styles for søgeikonet */
+  position: absolute;
+  top:160%;
+  right: 110px;
+  transform: translateY(-50%);
+  height:40px;
+  width:40px;
+  background-color:#080357;
+  color:#E0D4F1;
+  line-height: 40px;
+  font-size:22px ;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.search-box .search-btn.active{ /* styles for søgeikonet når det er aktivt */
+right: 26px;
+  height: 0px;
+margin-top: 23px;
+background-color: white;
+  color:#080357;
+  line-height: 35px;
+  font-size:20px;
+  transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .cancel-btn{ /* styles for krydset */
+  position: absolute;
+  top:155%;
+  right: 130px;
+  transform: translateY(-50%);
+  color:#E0D4F1;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s 0.2s cubic-bezier(0.68,-0.55, 0.265, 1,55)
+}
+
+.search-box .cancel-btn.active{ /* styles for krydset når det er aktivt */
+  right: -10px;
+  transform: translateY(-50%) rotate(360deg);
+  margin-top: 40px;
+}
+
+
+/* Search filter */ 
+
+#input{
+  background-position: 10px 12px; /* styles for input */
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 85px;
+  margin-right: -50px;
+}
+
+
+#UL{ /* styles for liste */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0; 
+  margin-right: 40px;
+}
+
+#UL li a{ 
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f7f7f7;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color:black;
+  display: block;
+  font-family: "nunito-sans", sans-serif;
+}
+
+#UL li a:hover:not(.header){ /* styles for hover*/
+  background-color:#f7f7f7;
+}
+
+#input:focus + #UL, #input:not(:empty) + #UL{ /* styles for at søgelisten kommer frem ved at trykke på søgefeltet*/
+  opacity: 1;
+}

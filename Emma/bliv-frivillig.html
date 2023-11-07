@@ -79,7 +79,25 @@
             <li class="nav-item"><a href="#">Webshop</a></li>
             <li class="nav-item"><a href="#">Om os</a></li>
             <li><button class="nav-button">Støt børnene</button></li>
-            <li><i class='bx bx-search sog-nav'></i></li>
+            <!--Søgefelt-->
+    <div class="search-box">
+      <input type="text" id="input" onkeyup="searchFunction()" placeholder="Søg..." title="søgefelt">
+            <ul id="UL">
+                <li><a href="#">frivillig</a></li>
+                <li><a href="#">bliv friviilig</a></li>
+                <li><a href="#">podcast</a></li>
+                <li><a href="#">støt</a></li>
+            </ul>
+        <div class="search-btn">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+   
+    <script src="search.js"></script>
+      <!--Søgefelt slut-->
         </ul>
     </nav>
   </header>  
@@ -262,7 +280,7 @@
       <input type="text" id="city" placeholder="Din by">
     </div>
 
-    <label for="område">Område</label>
+    <div id="område">Område</div>
     <div class="container">
       <div class="select-box">
         <div class="selected">

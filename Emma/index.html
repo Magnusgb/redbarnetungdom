@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/eti1pdf.css">
   <link rel="icon" type="image/x-icon" href="/forside-billeder/favicon.png">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/e470c73b41.js" crossorigin="anonymous"></script>
   <title>Red Barnet Ungdom</title>
 </head>
 <body> 
@@ -79,8 +80,26 @@
              <li class="nav-item"><a href="#">Webshop</a></li>
              <li class="nav-item"><a href="#">Om os</a></li>
              <li><button class="nav-button">Støt børnene</button></li>
-             <li><i class='bx bx-search sog-nav'></i></li>
          </ul>
+         <!--Søgefelt-->
+    <div class="search-box">
+      <input type="text" id="input" onkeyup="searchFunction()" placeholder="Søg..." title="søgefelt">
+            <ul id="UL">
+                <li><a href="#">frivillig</a></li>
+                <li><a href="#">bliv friviilig</a></li>
+                <li><a href="#">podcast</a></li>
+                <li><a href="#">støt</a></li>
+            </ul>
+        <div class="search-btn">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+   
+    <script src="search.js"></script>
+      <!--Søgefelt slut-->
      </nav>
    </header>  
 
