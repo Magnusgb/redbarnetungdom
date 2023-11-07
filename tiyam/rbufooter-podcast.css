@@ -1,0 +1,118 @@
+h2 {
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 10px 0px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    width: auto;
+  }
+  h4 {
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 10px 0px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: bold;
+    
+  }
+  .footer-content1 {
+    text-align: left; 
+  }
+  
+  
+  .footer-content1 {
+    max-width: 300px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Centrer indholdet horisontalt */
+  }
+  
+
+  
+  
+
+  .padding-left{
+    font-weight: bold;
+  }
+footer {
+width: 100%;
+background-color: #080357;
+}
+
+
+ul, li {
+list-style-type: none;
+list-style-position: inside;
+margin: 0;
+padding: 0;
+}
+
+
+.footer-content-container {
+display: flex;
+justify-content: space-between;
+color: #FFFFFF;
+}
+
+
+.footer-upper {
+display: flex;
+width: 100%;
+justify-content: space-around;
+}
+
+
+.footer-inner-content {
+display: flex;
+margin-right: 20px;
+font-weight: bold;
+font-size: 15px;
+}
+
+
+.footer-link {
+width: 50px;
+height: 50px;
+background-color: #FFF9A5;
+border-radius: 100px;
+}
+
+
+.footer-link-container {
+display: flex;
+justify-content: space-evenly;
+margin-top: 30px;
+}
+
+
+.padding-right {
+padding-right: 20px ;
+font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+.footer-content-container {
+flex-direction: column;
+}
+
+
+.footer-upper {
+justify-content: space-between;
+}
+
+
+.footer-link {
+width: 50px;
+height: 50px;
+}
+}
+
+
+
