@@ -1,4 +1,3 @@
-
 /*variabler*/
 let searchBtn = document.querySelector(".search-btn"); /*søge ikon der åbner søgefelt*/
 let cancelBtn = document.querySelector(".cancel-btn"); /*Kryds ikon, der lukker søgefeltet*/
@@ -42,8 +41,3 @@ function searchFunction(){
         }
     }
 }
-
-
-
-
-
