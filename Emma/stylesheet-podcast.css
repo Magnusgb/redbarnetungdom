@@ -15,8 +15,8 @@ h2 {
         
 h3 { 
     Font-family: futura-pt, sans-serif; 
-    font-weight: 500; 
-    font-style: italic; 
+    font-weight: 600; 
+    font-style: normal; 
     color: #F7F7F7;
     } 
 
@@ -34,59 +34,40 @@ p {
     text-decoration: none;
     }
 
-.knaplilla {
-    background-color: #E0D4F1;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    height: 50px;
-    width: 200px;
-    border-radius: 35px;
-    cursor: pointer;
-    transition: transform 0.2s;
-    list-style: none;
-    }
-    
-.knaplilla a {
-    color: #080357;
-    }
-    
-.knaplilla:hover a {
-    color: #080357;
-    list-style: none;
-    text-decoration: none;
-    }  
-    
-.knaplilla:hover {
-    transform: scale(1.1);
-    }
-
-    .knapbla {
-      background-color: #080357;
-      font-weight: bold;
-      font-size: 20px;
-      border: none;
-      height: 50px;
+    .knaplilla {
+      background-color:#E0D4F1;
       width: 200px;
       border-radius: 35px;
       cursor: pointer;
       transition: transform 0.2s;
-      list-style: none;
-        }
-        
-    .knapbla a {
-        color: #FFF9A5
-        }
-        
-    .knapbla:hover a {
-        color: #FFF9A5;
-        list-style: none;
-        text-decoration: none;
-        }  
-        
-    .knapbla:hover {
-        transform: scale(1.1);
-        }
+      display: inline-block;
+      text-align: center;
+      padding: 12px;
+      color:#080357;
+      font-size: 20px;
+      margin-top: 20px;
+      }
+  
+    .knaplilla:hover {
+      transform: scale(1.1);
+      }  
+
+    .knapbla {
+      background-color: #080357;
+      width: 200px;
+      padding: 12px;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      display: inline-block;
+      color:#FFF9A5;
+      font-size: 20px;
+      margin-top: 20px;
+      }
+  
+.knapbla:hover {
+      transform: scale(1.1);
+      }   
     
 /* Megamenu Web*/
 
@@ -102,6 +83,16 @@ a {
 li {
     list-style: none;
 }
+nav h3 { 
+  Font-family: futura-pt, sans-serif; 
+  font-weight: 600; 
+  font-style: normal; 
+  color: #F7F7F7;
+  font-size: 20px;
+  } 
+nav img {
+  margin-top: -30px;
+}
 
 button {
   font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
@@ -112,11 +103,7 @@ button {
     align-items: center;
 }
 
-a:hover {
-    color: #FFF9A5;
-}
-
-  .top-menu li {
+  .top-menu a {
     font-size: 14px;
     margin-right: 20px;
     padding-right: 20px;
@@ -125,6 +112,7 @@ a:hover {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
+    color: #FFF9A5;
   }
   
   .top-menu {
@@ -133,14 +121,14 @@ a:hover {
     list-style: none;
   }
   
-  .top-menu li a {
+  .top-menu li  {
   text-decoration: none;
   color: #FFF9A5;
   }
 
-  .navbutton {
-    background-color: #E0D4F1;
-    color: #080357;
+  .nav-button {
+    background-color:#E0D4F1;
+    color:#080357;
     border: none;
     height:40px;
     width: 100px;
@@ -149,7 +137,7 @@ a:hover {
     transition: transform 0.2s;
   }
   
-  .navbutton:hover {
+  .nav-button:hover {
     transform: scale(1.1);
   }
 
@@ -239,7 +227,9 @@ a:hover {
   .sub-menu2 {
     display: none;
   }
-
+  .sub-menu2 li a {
+    color: black;
+  }
   .nav-item-dropdown:hover .sub-menu2 {
     display: flex;
     position: absolute;
@@ -270,41 +260,31 @@ a:hover {
   }
   .CTA-2 h2 {
     font-family: futura-pt, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-size: 30px;
     color: #080357;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 20px;
   }
 
-  .CTA-2 p1 {
+  .CTA-2 p {
     font-family: "nunito-sans", sans-serif; 
     font-weight: 400; 
     font-style: normal;
     font-size: 16px;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 20px;
   }
-  
-  .CTA-2 p2 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    display: block;  
-    margin-left: 30px;
    
-  }
-  
   .CTA-2 span {
     position: absolute;
     display: inline-block;
     width: 2px; 
     height: 180px; 
     background-color: #080357;
-    margin-left: 260px;
-    margin-top: -90px;
+    margin-left: 300px;
+    margin-top: -110px;
   }
 
 .knap {
@@ -377,7 +357,7 @@ a:hover {
       justify-content: center;
       align-items: center;
       flex-direction: column-reverse;
-   gap: 30px;
+      gap: 30px;
     }
     
     .herobanner-tekst  {
@@ -849,10 +829,7 @@ tats-heading text-center mb-2{
 display: none;
 flex-direction: row;
 }
-.container{
-display: 100%;
 
-}
 
 .container {
   max-width: 1200px;
