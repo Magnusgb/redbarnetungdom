@@ -1,0 +1,73 @@
+.footer {
+    height: 220px;
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px rgba(0.2, 0, 0, 0);
+    width: auto;
+    display: flex;
+}
+
+.besøg {
+    flex: 1; 
+    padding-left: 70px;
+}
+
+.besøg-tekst {
+    font-size: 35px;
+    color: #080357;
+    position: absolute;
+}
+
+.besøg-brødtekst {
+    color: #080357;
+    margin-top: 100px; 
+    margin-bottom: -100px;
+}
+
+.kontaktinfo {
+    flex: 1; 
+}
+
+.kontaktinfo-tekst {
+    font-size: 35px;
+    padding-left: 55px;
+    color: #080357;
+    position: absolute;
+}
+
+.kontaktinfo-brødtekst1 {
+    color: #080357;
+    display: flex;
+    margin-top: 100px; 
+    margin-bottom: -100px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.kontaktinfo-brødtekst2 {
+    color: #080357;
+    display: flex;
+    margin-top: 100px; 
+    margin-bottom: -100px;
+    padding-left: 53px;
+    text-align: center;
+}
+
+.SoMe {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 50px;
+}
+
+.SoMe img {
+    margin-top: 115px;
+    height: auto;
+    margin-right: 10px; 
+    align-items: right;
+}
+
+.SoMe-tekst {
+    font-size: 35px;
+    padding-right: 18px;
+    color: #080357;
+    position: absolute;
+}

@@ -14,53 +14,6 @@
   display:none
 }
 
-.card {
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 10px;
-}
-
-/* Text colors */
-.text-primary {
-  color: var(--primary-color);
-}
-
-.text-secondary {
-  color: var(--secondary-color);
-}
-
-.text-dark {
-  color: var(--dark-color);
-}
-
-.text-light {
-  color: var(--light-color);
-}
-
-/* Text sizes */
-.lead {
-  font-size: 20px;
-}
-
-.sm {
-  font-size: 1rem;
-}
-
-.md {
-  font-size: 2rem;
-}
-
-.lg {
-  font-size: 3rem;
-}
-
-.xl {
-  font-size: 4rem;
-}
-
 .text-center {
   text-align: left;
 }

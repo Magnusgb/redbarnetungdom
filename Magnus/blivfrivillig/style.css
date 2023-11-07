@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  margin: 20px;
+  margin: 0;
 }
 
 h3 {
@@ -149,5 +149,70 @@ font-size: 40px;
     text-align: center;
   }
 
+  /* Ønskede herobanner layout - gør også brug af mar left & right*/
+  .section-container {
+  max-width: 1500px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+}
+
+.farve {
+  background-color: #f7f7f7;
+  height: 80vh;
+}
+
+.section-container .farve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image  {
+    width: 600px;
+}
+
+.text-button {
+    text-align: center;
+}
+
+.text {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+}
+
+@media (max-width: 768px){
+
+  .section-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .image img {
+    width: 200px; 
+  }
+
+  .text-button {
+     
+  }
 }
  
