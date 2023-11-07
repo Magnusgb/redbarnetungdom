@@ -1,170 +1,83 @@
-/* footer */
 footer {
-    background-color: #F7F7F7;
-    color: #080357;
-    text-align: center;
-    padding: 10px;
-}
-
-.footer-left {
-    float: left;
-    text-align: left;
-    width: 33.33%;
-}
-
-.footer-center {
-    display: inline-block;
-    text-align: center;
-    width: 33.33%;
-}
-
-.footer-right {
-    float: right;
-    text-align: right;
-    width: 33.33%;
-}
-
-
-.footer-title {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.footer-text {
-    font-size: 18px;
-}
-
-.footer-subtitle1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-.footer-undertekst1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-.footer-undertekst2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.footer-text1 {
-    font-size: 18px;
-    text-align: left;
-    margin-bottom: auto;
-}
-.footer-subtitle2 {
-    font-size: 20px;
-    margin-bottom: auto;
-    text-align: center;
-}
-
-.footer-text2 {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: auto;
-}
-.footer-subtitle3 {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-/*lokalforeningerne*/ 
-
-.footer-text3 {
-    font-size: 18px;
-    text-align: right;
-}
-.footer-text4 {
-    font-size: 18px;
-    text-align: left;
-    margin-top: auto
-}
-.footer-title {
-    display: inline-block;
-    font-size: 24px;
-    margin-right: 20px;
-}
-.flex-container {
+    width: 100%;
+    }
+    
+    
+    ul, li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+    .footer-content-container {
     display: flex;
-    justify-content: space-between;
-    background-color: #F7F7F7;
-    color: #080357;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-section {
-    flex: 1;
-    text-align: left;
-    padding: 10px;
-}
-/* Titlerne */
-.footer-section h1,
-.footer-section h2,
-.footer-section h3 {
-    font-size: 24px;
-}
-
-.venstre { 
-    display: inline-block;
-    float: right;
-}
-
-.footer-section p {
-    font-size: 16px;
-}
-
-
-/* Red Barnet Ungdom og Sekretariet */
-.footer-section h4,
-.footer-section h5 {
-    font-size: 18px;
-    margin-top: 15px;
-}
-
-
-.footer-section {
-    flex: 1;
-    text-align: center;
-    padding: 15px;
-}
-
-.app-logos {
-    display: inline-block;
-}
-
-.app-logos img {
-    width: 25px; /*Bredde efter behov*/
-    height: auto; /*Billedets aspect*/
-}
-.app-logos {
-    display: inline-block;
-}
-
-.app-logos img {
-    width: 40px; /*Bredden på billeder*/
-    height: auto; /*Aspect på logo*/
-    margin-right: 100px; /*Margin mellem apps*/
-}
-
-.footer-section1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top:40px;
-}
-
-.footer-section1 p {
-    text-align: left;
-    font-size: 16px;
-}
-
-.hojre {
-    margin-top: 12px;
-}
-
-
-.footer-subtitle3 {
-    font-size:20px;
-}
+    flex-direction: column; /* Ændrer til lodret retning på mobile enheder */
+    margin-top: 20px;
+    }
+    
+    
+    .footer-upper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    
+    
+    .footer-inner-content {
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Tilføjer en margin nederst for at skabe afstand mellem sektionerne */
+    }
+    
+    
+    .footer-link-container {
+    display: flex;
+    justify-content: center; /* Center indholdet vandret */
+    flex-wrap: wrap; /* Hvis indholdet ikke passer på skærmen, skal det pakke på flere linjer */
+    margin-top: 20px;
+    }
+    
+    
+    .footer-link {
+    margin: 10px; /* Tilføj margin for at opnå lige meget mellemrum */
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    border-radius: 100px;
+    }
+    
+    
+    .footer-content {
+    margin: 10px; /* Tilføj margin for at opnå lige meget mellemrum */
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+    
+    
+    .footer-content-container {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    }
+    
+    
+    .footer-upper {
+    justify-content: space-around;
+    }
+    
+    
+    .footer-link {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    }
+    }
+    
