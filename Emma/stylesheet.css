@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
 h2 {
   font-size: 50px;
 }
-
 
 h2, h3, h4 {  
     font-family: futura-pt, sans-serif; 
@@ -33,273 +32,241 @@ p, p1 {
 
 .knaprod {
     background-color: #EB282D;
-    border: none;
     height: 50px;
     width: 200px;
     border-radius: 35px;
     cursor: pointer;
     transition: transform 0.2s;
-    list-style: none;
-    }
-
-  .knaprod a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
     color: white;
     font-size: 20px;
+    margin-top: 20px;
     }
-
-  .knaprod:hover a {
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    }  
 
   .knaprod:hover {
-      transform: scale(1.1);
-    }
-
+    color: white;
+    transform: scale(1.1);
+    }  
+    
   .knapbla {
       background-color: #080357;
-      font-weight: bold;
-      font-size: 20px;
-      border: none;
       height: 50px;
       width: 200px;
       border-radius: 35px;
       cursor: pointer;
       transition: transform 0.2s;
-      list-style: none;
-    }
-
-    .knapbla a {
+      display: inline-block;
+      text-align: center;
+      padding: 12px;
       color: white;
-    }
-
-  .knapbla:hover a {
+      font-size: 20px;
+      margin-top: 20px;
+      }
+  
+.knapbla:hover {
       color: white;
-      list-style: none;
-      text-decoration: none;
-    }  
-
-  .knapbla:hover {
       transform: scale(1.1);
-    }
+      }  
 
 /* Megamenu Web*/
-
 header {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-  font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
+font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
 }
 .nav-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 a:hover {
-    color: #eb282d;
+  color: #eb282d;
 }
 
 .nav-button {
-    background-color: #080357;
-    color: white;
-    border: none;
-    height:40px;
-    width: 100px;
-    border-radius: 35px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .nav-button:hover {
-    transform: scale(1.1);
-  }
+  background-color: #080357;
+  color: white;
+  border: none;
+  height:40px;
+  width: 100px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 
-  .top-menu li {
-    font-size: 14px;
-    margin-right: 20px;
-    padding-right: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #080357;
-  }
-  
-  .top-menu {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
-  
-  .top-menu li a {
-  text-decoration: none;
+.nav-button:hover {
+  transform: scale(1.1);
+}
+
+.top-menu a {
+  font-size: 14px;
+  margin-right: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: #080357;
-  }
+}
 
-  .sub-menu {
-    display: none;
-  }
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
 
-  .nav-item-dropdown:hover .sub-menu {
-    display: flex;
-    position: absolute;
-    width: 90vw;
-    height: 45vh;
-    justify-content: space-evenly;
-    background-color: white;
-    left: 95px;
-    margin: 15px;
-  }
+.top-menu li a {
+text-decoration: none;
+color: #080357;
+}
 
-  .nav-item-dropdown:hover .sub-menu li a {
-    margin-top: 10px;
-  }
+.sub-menu {
+  display: none;
+}
 
-  .nav-item-dropdown:hover .sub-menu ul {
-    margin-top: 10px;
-  }
- 
-  .sub.menu ul {
-    margin-top: 50px;
-  }
+.nav-item-dropdown:hover .sub-menu {
+  display: flex;
+  position: absolute;
+  width: 90vw;
+  height: 45vh;
+  justify-content: space-evenly;
+  background-color: white;
+  left: 95px;
+  margin: 15px;
+}
 
-  .nav-item-dropdown {
-    padding: 15px;
-  }
-  .nav-item-dropdown:hover .sub-menu li a {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-  }
+.nav-item-dropdown:hover .sub-menu li a {
+  margin-top: 10px;
+}
 
-  .nav-item-dropdown:hover .sub-menu h3 {
-    color: #080357;
-  }
- 
-  .CTA h2 {
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    color: #080357;
-    margin-top: 10px;
-    margin-right: 50px;
-  }
+.nav-item-dropdown:hover .sub-menu ul {
+  margin-top: 10px;
+}
 
-  .CTA p1 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-  }
-  
-  .CTA p2 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    display: block;  
-  }
-  
-  .CTA span {
-    position: absolute;
-    display: inline-block;
-    width: 2px; 
-    height: 280px; 
-    background-color: #080357; 
-    margin-top: -80px;
-    margin-left: 220px;
-  }
+.sub.menu ul {
+  margin-top: 50px;
+}
 
-  .sub-menu2 {
-    display: none;
-  }
+.nav-item-dropdown {
+  padding: 15px;
+}
+.nav-item-dropdown:hover .sub-menu li a {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+}
 
-  .nav-item-dropdown:hover .sub-menu2 {
-    display: flex;
-    position: absolute;
-    width: 90vw;
-    height: 30vh;
-    background-color: white;
-    justify-content: flex-start;
-    left: 95px;
-    margin-top: 15px;
-  }
-  .nav-item-dropdown:hover .sub-menu2 li a {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-  }
+.nav-item-dropdown:hover .sub-menu h3 {
+  color: #080357;
+}
 
-  .nav-item-dropdown:hover .sub-menu2 ul {
-    margin-left: 50px;
-    margin-top: 20px;
-  }
+.CTA h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  color: #080357;
+  margin-top: 10px;
+}
 
-  .nav-item-dropdown:hover .sub-menu2 h3 {
-    color: #080357;
-  }
-  .CTA-2 h2 {
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    color: #080357;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
+.CTA p1 {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+}
 
-  .CTA-2 p1 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  
-  .CTA-2 p2 {
-    font-family: "nunito-sans", sans-serif; 
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 16px;
-    display: block;  
-    margin-left: 30px;
-   
-  }
-  
-  .CTA-2 span {
-    position: absolute;
-    display: inline-block;
-    width: 2px; 
-    height: 180px; 
-    background-color: #080357;
-    margin-left: 260px;
-    margin-top: -90px;
-  }
-        
+
+.CTA span {
+  position: absolute;
+  display: inline-block;
+  width: 2px; 
+  height: 250px; 
+  background-color: #080357; 
+  margin-top: -70px;
+  margin-left: 210px;
+}
+
+.sub-menu2 {
+  display: none;
+}
+
+.nav-item-dropdown:hover .sub-menu2 {
+  display: flex;
+  position: absolute;
+  width: 90vw;
+  height: 30vh;
+  background-color: white;
+  justify-content: flex-start;
+  left: 95px;
+  margin-top: 15px;
+}
+.nav-item-dropdown:hover .sub-menu2 li a {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+}
+
+.nav-item-dropdown:hover .sub-menu2 ul {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.nav-item-dropdown:hover .sub-menu2 h3 {
+  color: #080357;
+}
+.CTA-2 h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  color: #080357;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.CTA-2 p {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+
+.CTA-2 span {
+  position: absolute;
+  display: inline-block;
+  width: 2px; 
+  height: 170px; 
+  background-color: #080357;
+  margin-left: 260px;
+  margin-top: -110px;
+}
 
 /*HERO-BANNER styling*/
 
@@ -389,6 +356,7 @@ a:hover {
   font-size: 30px; 
 }
 }
+
 
 /*Citat*/
 .citat{
@@ -731,7 +699,7 @@ margin-bottom: 35px;
 
 }
 
-/* Sektion 1 Hjælp børd der har det svært*/
+/* Sektion 1 Hjælp børn der har det svært*/
 
 .section-1 h2 {
   font-size: 30px;
@@ -1016,7 +984,7 @@ form small {
 }
 
 .submit-btn input:hover {
-  scale: 1.02;
+  transform: scale(1.1);
 }
 
 /* Slideshow */
@@ -1041,9 +1009,28 @@ form small {
  width: auto;
  padding: 0px 17px 17px;
 }
+
+.carousel1 h2 {
+  font-size: 30px;
+  text-align: left;
+}
+.carousel1 p {
+  font-family: "nunito-sans", sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  color: #242424;
+  overflow: hidden;
+  max-width: 380px;
+  text-align: left;
+}
+
+.wrapper, .slideshowh2{
+text-align: center;
+
+}
 .wrapper i:first-child{
-  left: 90px;
-  display: none;
+left: 85px;
+display: none;
 margin-bottom: 110px;
 }
 .wrapper i:last-child{
@@ -1079,6 +1066,29 @@ margin-bottom: 110px;
 #right:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 transparent, 0 0 transparent, 0 0 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
+}
+
+.slide p,h2{
+  margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  .carousel1 {
+    max-width: 320px;
+  }
+  .wrapper i:last-child{
+    right: 0px;
+    margin-top: 130px;
+  }
+  .wrapper i:first-child{
+    left: 00px;
+    display: none;
+    margin-bottom: 110px;
+    }
+    .slide p,h2{
+      max-width: 300px;
+      margin-left: 40px;
+    }
 }
 
 /* Sektion 4 Mød vores frivillige */
@@ -1218,7 +1228,132 @@ font-size: 40px;
   .top-menu {
     display: none;
   }
-  nav {
-  display: none;
+
+  .nav-list {
+    display: none;
+  }
+  
 }
+
+.search-box{  /* placering af søgefletet */
+  height: 40px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
+}
+
+
+
+.search-box.active{  /* længde på søgefletet når det er aktivt */
+  width: 250px;
+}
+
+
+.search-box input{  /* styles i søgefeltet */
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color:#080357;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px ;
+  opacity: 0;
+  margin-left: -20px;
+  transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
+}
+
+.search-box input.active{ 
+  opacity: 1;
+
+}
+
+.search-box .search-btn{ /* styles for søgeikonet */
+  position: absolute;
+  top:130%;
+  right: 110px;
+  transform: translateY(-50%);
+  height:40px;
+  width:40px;
+  background-color:#f7f7f7;
+  color: #080357;
+  line-height: 40px;
+  font-size:22px ;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.search-box .search-btn.active{ /* styles for søgeikonet når det er aktivt */
+right: 26px;
+  height: 10px;
+margin-top: 37px;
+  color:#ffffff;
+  line-height: 35px;
+  font-size:20px;
+  background-color: #080357;
+  transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .cancel-btn{ /* styles for krydset */
+  position: absolute;
+  top:130%;
+  right: 110px;
+  transform: translateY(-50%);
+  color:#080357;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s 0.2s cubic-bezier(0.68,-0.55, 0.265, 1,55)
+}
+
+.search-box .cancel-btn.active{ /* styles for krydset når det er aktivt */
+  right: -5px;
+  transform: translateY(-50%) rotate(360deg);
+  margin-top: 50px;
+}
+
+
+/* Search filter */ 
+
+#input{
+  background-position: 10px 12px; /* styles for input */
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+margin-top: 80px;
+margin-right: -50px;
+}
+
+
+#UL{ /* styles for liste */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0; 
+  margin-right: 40px;
+}
+
+#UL li a{ 
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f7f7f7;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color:black;
+  display: block;
+  font-family: "nunito-sans", sans-serif;
+}
+
+#UL li a:hover:not(.header){ /* styles for hover*/
+  background-color:#f7f7f7;
+}
+
+#input:focus + #UL, #input:not(:empty) + #UL{ /* styles for at søgelisten kommer frem ved at trykke på søgefeltet*/
+  opacity: 1;
 }
