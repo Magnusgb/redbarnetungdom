@@ -1,81 +1,300 @@
-Body { 
-    margin: 20px; 
-    } 
+/*Generel styling */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-
-h2 {  
+h2, h3, h4 {  
     font-family: futura-pt, sans-serif; 
     font-weight: 500; 
     font-style: normal; 
     color: #080357;
     }
-        
-h3 { 
-    Font-family: futura-pt, sans-serif; 
-    font-weight: 500; 
-    font-style: italic; 
-    color: #080357;
-    } 
 
-.h3{ 
-    Font-family: futura-pt, sans-serif; 
+ a {
+  font-family: futura-pt, sans-serif; 
     font-weight: 500; 
-    font-style: italic; 
-    color: #080357;
-    } 
-        
-p { 
+    font-style: normal;
+    text-decoration: none;
+ }
+
+p, p1 { 
     font-family: "nunito-sans", sans-serif; 
     font-weight: 400; 
     font-style: normal; 
     color: #242424;
     } 
 
-
-.knap {
-    background-color: #EB282D; 
-    color: white; 
-    font-size: 15px; 
-    font-family: "nunito-sans", sans-serif; 
-    font-style: normal;
-    border: none; 
-    height: 50px; 
-    width: 130px; 
-    padding: 5px 10px;
-    border-radius: 35px; 
-    cursor: pointer; 
+.knaprod {
+    background-color: #EB282D;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 35px;
+    cursor: pointer;
     transition: transform 0.2s;
-    text-decoration: none;
-    } 
-        
-.knap:hover { 
-    transform: scale(1.1); 
-    } 
+    list-style: none;
+    }
 
-.knap-blå {
-    background-color: #080357; 
-    color: white; 
-    font-size: 15px; 
-    font-family: "nunito-sans", sans-serif; 
-    font-style: normal;
-    border: none; 
-    height: 50px; 
-    width: 130px; 
-    padding: 5px 10px;
-    border-radius: 35px; 
-    cursor: pointer; 
-    transition: transform 0.2s;
-    text-decoration: none;
-    } 
-            
-.knap-blå:hover { 
-    transform: scale(1.1); 
-    } 
-
-.afsnit{
+  .knaprod a {
     color: white;
+    }
+
+  .knaprod:hover a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    }  
+
+  .knaprod:hover {
+      transform: scale(1.1);
+    }
+
+  .knapbla {
+      background-color: #080357;
+      font-weight: bold;
+      font-size: 20px;
+      border: none;
+      height: 50px;
+      width: 200px;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      list-style: none;
+    }
+
+    .knapbla a {
+      color: white;
+    }
+
+  .knapbla:hover a {
+      color: white;
+      list-style: none;
+      text-decoration: none;
+    }  
+
+  .knapbla:hover {
+      transform: scale(1.1);
+    }
+
+/* Megamenu Web*/
+
+header {
+    background-color: #f7f7f7;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+  font-family: "futura-pt", sans-serif; font-weight: 700;font-style: normal;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a:hover {
+    color: #eb282d;
+}
+
+.nav-button {
+    background-color: #080357;
+    color: white;
+    border: none;
+    height:40px;
+    width: 100px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .nav-button:hover {
+    transform: scale(1.1);
+  }
+
+  .top-menu li {
+    font-size: 14px;
+    margin-right: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #080357;
+  }
+  
+  .top-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  .top-menu li a {
+  text-decoration: none;
+  color: #080357;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  .nav-item-dropdown:hover .sub-menu {
+    display: flex;
+    position: absolute;
+    width: 90vw;
+    height: 45vh;
+    justify-content: space-evenly;
+    background-color: white;
+    left: 95px;
+    margin: 15px;
+  }
+
+  .nav-item-dropdown:hover .sub-menu li a {
+    margin-top: 10px;
+  }
+
+  .nav-item-dropdown:hover .sub-menu ul {
+    margin-top: 10px;
+  }
+ 
+  .sub.menu ul {
+    margin-top: 50px;
+  }
+
+  .nav-item-dropdown {
+    padding: 15px;
+  }
+  .nav-item-dropdown:hover .sub-menu li a {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+  }
+
+  .nav-item-dropdown:hover .sub-menu h3 {
+    color: #080357;
+  }
+ 
+  .CTA h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: #080357;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+
+  .CTA p1 {
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 16px;
+  }
+  
+  .CTA p2 {
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 16px;
+    display: block;  
+  }
+  
+  .CTA span {
+    position: absolute;
+    display: inline-block;
+    width: 2px; 
+    height: 280px; 
+    background-color: #080357; 
+    margin-top: -80px;
+    margin-left: 220px;
+  }
+
+  .sub-menu2 {
+    display: none;
+  }
+
+  .nav-item-dropdown:hover .sub-menu2 {
+    display: flex;
+    position: absolute;
+    width: 90vw;
+    height: 30vh;
+    background-color: white;
+    justify-content: flex-start;
+    left: 95px;
+    margin-top: 15px;
+  }
+  .nav-item-dropdown:hover .sub-menu2 li a {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+  }
+
+  .nav-item-dropdown:hover .sub-menu2 ul {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .nav-item-dropdown:hover .sub-menu2 h3 {
+    color: #080357;
+  }
+  .CTA-2 h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: #080357;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .CTA-2 p1 {
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  
+  .CTA-2 p2 {
+    font-family: "nunito-sans", sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 16px;
+    display: block;  
+    margin-left: 30px;
+   
+  }
+  
+  .CTA-2 span {
+    position: absolute;
+    display: inline-block;
+    width: 2px; 
+    height: 180px; 
+    background-color: #080357;
+    margin-left: 260px;
+    margin-top: -90px;
+  }
+        
 /*HERO-BANNER styling*/
 .grå-baggrund{
     background-color: #F7F7F7;
@@ -90,7 +309,20 @@ p {
     display: none;
 }
 
-/*HERO-BANNER ved større end en mobil*/
+.forsidecta {
+margin-left: 20px;
+margin-top: 20px;
+}
+
+
+.herobanner h2 {
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+
+/*HERO-BANNER 768px*/
 @media screen and (min-width: 768px){
 .billede-mobil{
     display: none;
@@ -118,7 +350,7 @@ h2{
     flex: 50%
 }}
 
-/*HERO-BANNER ved web*/
+/*HERO-BANNER 1024*/
 @media screen and (min-width: 1024px){
 .billede-web{
     max-width: 700px;
@@ -130,73 +362,433 @@ h2{
     margin-left: 30px;
 }
 
+
 h2{
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .knap{
-    margin-left: 30px;
+   text-align: center;
     font-size: 20px;
 }}
 
+/*Citat*/
+
+.citat{
+    color: #080357;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.red-barnet-citat{
+    color: #080357;
+    font-style: normal;
+    text-align: center;
+    margin-left: 100px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Call to action knapper*/
+
+.image-container-med-knap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.image-container-med-knap img{
+    height: 320px;
+    margin-top: 20px;
+    justify-content: center;
+   
+}
+
+.image-med-knap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-med-knap .image-container-med-knap{
+    position: relative;
+    margin: 30px;
+}
+
+.billeder-knap {
+    background-color: #EB282D;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: -20px;
+}
+
+.billeder-knap:hover {
+    transform: scale(1.1);
+}
+
+/* Responsiv billeder med knap*/
+@media (min-width: 768px) {
+    .citat{
+        font-size: 30px;
+    }
+    
+    .red-barnet-citat{
+        font-size: 20px;
+    }
+
+    .image-container-med-knap img{
+        height: 200px;
+        margin-top: 20px;
+        justify-content: center;
+        margin: -10px;
+    }
+
+    .billeder-knap {
+        font-size: 16px;
+        height: 40px;
+        width: 150px;
+        margin-top: -20px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .citat{
+        font-size: 40px;
+    }
+    
+    .red-barnet-citat{
+        font-size: 30px;
+    }
+
+    .image-container-med-knap img{
+        height: 360px;
+        margin-top: 20px;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .billeder-knap {
+        font-size: 20px;
+        height: 50px;
+        width: 200px;
+        margin-top: -40px;
+    }
+}
 
 /*REKLAME podcast styling*/
 .grå-baggrund{
-    background-color: #F7F7F7;
-    padding: 20px 0px 50px;
+  background-color: #F7F7F7;
+  padding: 20px 0px 50px;
+}
+
+.reklamecta {
+margin-top: 30px;
 }
 
 .reklame-billede{
-    width: 100%;
-    max-width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .illustrationer{
-    display: flex;
+  display: flex;
 }
 
 .illustrationer img{
-    height: 40px;
-    margin-top: 7px;
+  height: 40px;
+  margin-top: 7px;
 }
 
 /*REKLAME podcast ved større end en mobil*/
 @media screen and (min-width: 768px){   
 .reklame-billede{
-    width: 100%;
-    margin-top: 40px;
-    max-width: 500px;
+  width: 100%;
+  margin-top: 40px;
+  max-width: 500px;
 }
 
 .reklame-tekst{
-    margin-left: 20px;
-    max-width: 400px;
+  margin-left: 20px;
+  max-width: 400px;
 }
 
 .række {
-    display: flex;
+  display: flex;
 }
-      
+    
 .kolonne {
-    flex: 50%
+  flex: 50%
 }}
 
 /*REKLAME podcast ved web*/
 @media screen and (min-width: 1024px){
 .reklame-billede{
-    max-width: 700px;
-    margin-right: 30px;
-    max-width: 500px;
+margin-left: 100px;
+margin-top: 0px;
 }
 
 .reklame-tekst{
-    margin-left: 30px;
-    max-width: 450px;
+  margin-left: 30px;
+  max-width: 450px;
 }
 
 
 .knap-blå{
-    margin-left: 30px;
-    font-size: 20px;
+  margin-left: 30px;
+  font-size: 20px;
 }}
 
+/*Nyheder Forside*/
+
+.nyheder{
+  color:#080357;
+  font-weight:bold;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.nyheder-container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container-nyheder{
+  text-align: center; 
+  align-items: center;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.image-container-nyheder img{
+  display:block;
+  width:100%;
+  height: auto;
+  justify-content: center;
+}
+
+.nyheder-container .image-container-nyheder{
+  position: relative;
+  margin: 0;
+}
+
+
+.nyheder-overskift{
+  color: #080357;
+  font-style: normal;
+  font-weight:bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.nyheder-tekst {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-right: 0px;
+  max-width: 320px;
+}
+
+.nyheder-knap {
+  background-color: #080357;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  height: 40px;
+  width: 200px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 30px auto 30px;
+  display: block;
+}
+
+/*Responsiv nyheder*/
+
+.nyheder-knap:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .image-container-nyheder{
+      max-width: 222px;
+  } 
+}
+
+@media (min-width: 1024px) {
+  .nyheder{
+      font-size: 50px;
+      margin-bottom: 70px;
+  }
+
+  .image-container-nyheder{
+      max-width: 410px;
+  }
+
+  .nyheder-tekst {
+      margin-bottom: 30px;
+      margin-right: 0px;
+      max-width: 410px;
+      font-size: 20px;
+  }
+  
+  .nyheder-overskift{
+      margin-top: 25px;
+      margin-bottom: 5px;
+      font-size: 25px;
+  }
+
+  .nyheder-sektion, nyhederknap {
+    text-align: center;
+  }
+}
+
+.section-1 h2 {
+  color: #080357;
+}
+.section-2 h2 {
+  color: #080357;
+  margin-bottom: 30px;
+}
+
+.section-3 h2 {
+  color: #080357;
+  margin-top: 50px;
+}
+
+section h2 {
+  color: #080357;
+  margin-top: 50px;
+}
+.section-1-text-2 br {
+  display: none;
+}
+
+.section-1 p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.cirkle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #080357;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cirkle h4 {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.section-2 p {
+margin-top: -30px;
+margin-left: 50px;
+}
+
+.grid-1 {
+  margin-bottom: 35px;
+}
+
+.content img {
+  height: 30px;
+  margin-right: 15px;
+  margin-top: 12px;
+}
+
+.content {
+  display: flex;
+}
+
+.container-skriv1 img {
+ width: 100px;
+ margin-top: 10px;
+
+}
+
+.container-skriv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin-top: 20px;
+}
+
+.container-skriv1 p {
+  margin: 15px;
+  text-align: left;
+  line-height: 35px;
+}
+
+@media (min-width: 768px) {
+.kort {
+width: 650px;
+height: 500px;
+}
+
+.indhold {
+  display: flex;
+  flex-direction: column;
+  margin-top: -50px;
+}
+
+.baggrund {
+  display: flex;
+  gap: 50px;
+}
+
+.indhold h2 {
+font-size: 40px;
+}
+
+.indhold p1 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.content {
+  margin-bottom: 30px;
+}
+.h2-mobil {
+  display: none;
+}
+}
+
+@media (min-width: 1024px)  {
+  .section-1-text-2 br{
+    display: block;
+  }
+  .section-4 {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+
+  .container-skriv1 {
+    width: 400px;
+   }
+  .section-4h2 {
+    text-align: center;
+  }
+
+}
