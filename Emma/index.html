@@ -101,7 +101,34 @@
     <script src="search.js"></script>
       <!--Søgefelt slut-->
      </nav>
-   </header>  
+
+
+<!--Burgermenu fra 1200px--> 
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="index.html">
+    <img src="/forside-billeder/LogoRedBarnetUngdom.png" alt="Logo" class="logo" width="250"></a>
+      <input type="checkbox" name="Menu" id="Menu">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+          <li class="forside-nav"><a href="bliv-frivillig.html">Bliv Frivillig</a></li>
+          <li><a href="#">Bliv medlem</a></li>
+          <li class="podcast"><a href="#">Podcast<i class='bx bx-chevron-down mobil-ikon'></i></a></li>
+                        <li><a href="podcast.html">Nyheder</a></li>
+                        <li><a href="podcast-episoder.html">Lyt her</a></li>
+          
+          <li><a href="#">Webshop</a></li>
+          <li><a href="#">Om os</a></li>
+        
+          <li><h5 class="knapbla">Støt børnene</h5></li>
+        </ul>
+  </div>
+</nav>
+</header>  
 
   <!-- HERO-BANNER-->
  <section>
@@ -143,23 +170,27 @@
 </div>
 </section>
 
-<section class="reklame-podcastbg">
-      <div class="række">
-          <div class="kolonne1">
-              <div class="reklame">
-                  <img src="/forside-billeder/reklame-instagram.png" class="reklame-billede" alt="reklame podcast">
-              </div>
-          </div>
-          <div class="kolonne2">
-              <div class="reklame-tekst">
-                  <h2>Lyt til vores nye podcast</h2>
-                  <p>Vi er her sammen er Red Barnet Ungdoms nye podcast lavet af unge for unge. Her møder du Stine og Magnus, som sammen med nye gæster hver uge, vil snakke om livets udfordringer, glæder og alt det midt imellem. <br> <br> Sammen udforsker vi, hvad det betyder at være ung i dag på både godt og ondt.</p>
-                  <a href="xxx" class="knapbla reklamecta">BLIV FRIVILLIG</a>
+<div class="whitespace"></div>
 
-                </div>
-          </div>
-      </div>
+<section>
+  <div class="farve1">
+<div id="sektion-frivillig-web" class="sektion-cta">
+  <h2 class="mobil">Lyt til vores podcast</h2>
+  <div class="billede">
+    <img class="frivillig-billede" src="/forside-billeder/reklame-instagram.png" alt="Vi er her sammen - Instagram feed">
+  </div>
+  <div class="tekst">
+    <h2 class="web">Lyt til vores podcast</h2>
+    <p>Vi er her sammen er Red Barnet Ungdoms nye podcast lavet af unge for unge. 
+      Her møder du Stine og Magnus, som sammen med nye gæster hver uge, vil snakke om livets udfordringer, 
+      glæder og alt det midt imellem. <br> Sammen udforsker vi, hvad det betyder at være ung i dag på både godt og ondt. </p>
+    <a href="bliv-frivillig.html" class="knapbla">LYT HER</a>
+  </div>
+</div>
+</div>
 </section>
+
+<div class="whitespace"></div>
 
 <!--Nyheder-->
 <section>
@@ -184,10 +215,69 @@
     <p class="nyheder-tekst">Formand Serkan Kilavuz og næstforkvinde Aleyna Kocak i Køge, var den 28/9 en tur på Borgmesterens Kontor … </p>
   </div>
 </div>
-
   <button class="nyheder-knap">SE FLERE NYHEDER</button>
- 
 </section>
 
+<!--Footer-->
+<footer>
+  <div class="footer-content-container">
+  <div class="footer-upper">
+  <div class="footer-content">
+  <h2>Kontakt os</h2>
+  <h4>Redbarnet ungdom</h4>
+  <ul>
+  <li> Rosenørs allé 12</li>
+  <li> DK-1634 København V </li>
+  <li> CVR nr.: 27 33 66 04 </li>
+ 
+  <li> <br>Tlf nr.: 35 24 85 42</br> </li>
+  </ul>
+  </div>
+  <div class="footer-content1">
+  <h2>Kig forbi</h2>
+  <h4>Sekretariatet</h4>
+  <ul>
+  <li> Rosenørns Allé 12, st. </li>
+  <li> 1634 København V</li>
+  </ul>
+  <h4>Sekretariatet</h4>
+  <ul>
+  <li>Frederiksgade 76A, 1. sal</li>
+  <li> 8000 Århus C </li>
+  </ul>
+  </div>
+  </div>
+  <div class="footer-content">
+  <h2>Lokalforeninger</h2>
+  <div class="footer-inner-content">
+  <ul class="padding-right">
+  <li> <p>NORDJYLLAND</p> </li>
+  <li> <p>ÅRHUS</p> </li>
+  <li> <p>AMAGER</p> </li>
+  <li> <p>ESBJERG</p> </li>
+  <li> <p>KØBENHAVN</p> </li>
+  <li> <p>KØGE</p> </li>
+
+  </ul class="padding-left">
+  <ul>
+  <li> <p>ODENSE</p> </li>
+  <li> <p>RANDERS</p> </li>
+  <li> <p>MIDTSJÆLLAND</p> </li>
+  <li> <p>SLAGELSE</p> </li>
+  <li> <p>VEJLE</p> </li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="footer-link-container">
+  <div class="footer-link"> <img src="mail.png" alt=""></div>
+  <div class="footer-link"> <img src="spotify.png" alt=""></div>
+  <div class="footer-link"> <img src="youtube.png" alt=""></div>
+  <div class="footer-link"> <img src="facebook.png" alt=""></div>
+  <div class="footer-link"> <img src="instagram.png" alt=""></div>
+  <div class="footer-link"> <img src="twitter.png" alt=""></div>
+  </div>
+  </footer>
+  
 </body>
 </html>
