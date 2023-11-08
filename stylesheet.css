@@ -1644,6 +1644,11 @@ font-weight: bold;
 transition: transform 0.3s; /* Tilføj en glidende overgangseffekt */
 }
 
+.footer-content{
+  margin: 0 120px;
+}
+
+
 @media screen and (max-width: 600px) {
 .footer-content-container {
 flex-direction: column;
@@ -1656,5 +1661,9 @@ justify-content: space-between;
 .footer-link {
 width: 50px;
 height: 50px;
+}
+
+.footer-content {
+  margin:0;
 }
 }
