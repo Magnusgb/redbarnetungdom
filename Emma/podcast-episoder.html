@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="stylesheet-podcast.css">
   <link rel="stylesheet" href="https://use.typekit.net/eti1pdf.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="/podcastforside-billeder/logovehs.png">
   <script src="https://kit.fontawesome.com/e470c73b41.js" crossorigin="anonymous"></script>
 
   <title>Red Barnet Ungdom</title>
@@ -28,7 +29,7 @@
           <i class='bx bxs-chevron-down ikondropdown'></i></a>
               <div class="sub-menu">
                 <div class="CTA">
-                  <a href="bliv-frivillig.html">
+                  <a href="podcast.html">
                   <h2>Bliv Frivillig</h2></a>
                   <p>Vil du gerne være frivillig <br>og hjælpe børn og unge?</p>
                   <span></span>
@@ -75,12 +76,15 @@
              <ul>
                <li><h3>Podcast</h3></li>
                <li><a href="podcast.html">Nyheder</a></li>
-               <li><a href="#">Lyt her</a></li>
+               <li><a href="podcast-episoder.html">Lyt her</a></li>
              </ul>
            </div>              
           <li class="nav-item"><a href="#">Webshop</a></li>
           <li class="nav-item"><a href="#">Om os</a></li>
           <li><button class="nav-button">Støt børnene</button></li>
+        </ul>
+      </nav>
+      
  <!--Søgefelt-->
  <div class="search-box">
   <input type="text" id="input" onkeyup="searchFunction()" placeholder="Søg..." title="søgefelt">
@@ -97,10 +101,33 @@
         <i class="fas fa-times"></i>
     </div>
 </div>
-
 <script src="search.js"></script>
-  <!--Søgefelt slut-->      </ul>
-  </nav>
+  <!--Søgefelt slut-->      
+
+
+  <!--Burgermenu fra 1200px--> 
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="index.html">
+    <img src="/podcastforside-billeder/logovehs.png" alt="Logo" class="logo" width="250"></a>
+      <input type="checkbox" name="Menu" id="Menu">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+          <li class="forside-nav"><a href="bliv-frivillig.html">Bliv Frivillig</a></li>
+          <li><a href="#">Bliv medlem</a></li>
+          <li class="podcast"><a href="#">Podcast<i class='bx bx-chevron-down mobil-ikon'></i></a></li>
+          <li><a href="podcast.html">Nyheder</a></li>
+          <li><a href="podcast-episoder.html">Lyt her</a></li>
+          <li><a href="#">Webshop</a></li>
+          <li><a href="#">Om os</a></li>
+          <li><h5 class="knapbla">Støt børnene</h5></li>
+        </ul>
+  </div>
+</nav>
 </header>  
 
 <!-- Herobanner-Podcast -->
@@ -110,7 +137,7 @@
        <div class="text-button">
            <h2 class="herobanner-tekst"><i>Se med her på siden<br>
             eller lyt på</i> <b>Spotify</b></h2>
-            <a href="xxx" class="knaplilla">LYT MED HER</a>
+            <a href="#episoder" class="knaplilla">LYT MED HER</a>
            </div>
        <div class="image">
        <img src="/podcastforside-billeder/podcast-reklame.png" alt="Herobanner - Podcast værter">
@@ -126,29 +153,85 @@
   </div>
 </section>
 
-
-  
-    <section>
+    <section id="episoder">
       <div class="container">
           <div class="grid grid-2 text-center my-4">
               <div>
-                  <img src="play-button-png-play-video-button-png-321.png">
+                <div class="iframe-container">
+                  <iframe src="https://www.youtube.com/embed/WjDRhTX5_cY?si=7E6ohbP6XHVKT8Yc"></iframe>
+                </div>
               </div>
               <div>
                   <h4 class="stats-heading text-center mb-2">Episode 1: Fællesskaber eller ej</h4>
                   <br>
                   <p class="stats-heading text-center mb-2">
-                      Velkommen til podcasten vi er her sammen
-                      i denne episode snakker vi med Sofie Poulsen omkring hendes syn på hvad 
-                      fælleskaber er, og hvor meget det spiller ind i hendes hverdage.
-                      Derudover snakker vi om Sofies liv som studerende og deres deltagelse i velgørenhed.</p>
+                    Velkommen til podcasten Vi er her sammen! I denne uge har vi fornøjelse af at have Sofie Huysdens Poulsen, til en god snak om fællesskaber, både dem man er en del af, men også dem man føler sige udenfor. </p>
               </div>
           </div>
-          <button class="knapbla"><a href="xxx">SE FLERE AFSNIT</a></button>
+          <a href="xxx" class="knapbla">SE FLERE EPISODER</a>
       </div>
-  </div>
-</div>
   </section>
+
+  <footer>
+    <div class="footer-content-container">
+    <div class="footer-upper">
+    <div class="footer-content">
+    <h2>Kontakt os</h2>
+    <h4>Redbarnet ungdom</h4>
+    <ul>
+    <li> <p>Rosenørs allé 12</p> </li>
+    <li> <p>DK-1634 København V</p> </li>
+    <li> <p>CVR nr.: 27 33 66 04 </p> </li>
+    
+    <li> <br>Tlf nr.: 35 24 85 42</br> </li>
+    </ul>
+    </div>
+    <div class="footer-content1">
+    <h2>Kig forbi</h2>
+    <h4>Sekretariatet</h4>
+    <ul>
+    <li> <p>Rosenørns Allé 12, st.</p> </li>
+    <li> <p>1634 København V</p> </li>
+    </ul>
+    <h4>Sekretariatet</h4>
+    <ul>
+    <li> <p>Frederiksgade 76A, 1. sal</p> </li>
+    <li> <p>8000 Århus C</p> </li>
+    </ul>
+    </div>
+    </div>
+    <div class="footer-content">
+    <h2>Lokalforeninger</h2>
+    <div class="footer-inner-content">
+    <ul class="padding-right">
+    <li> <p>NORDJYLLAND</p> </li>
+    <li> <p>ÅRHUS</p> </li>
+    <li> <p>AMAGER</p> </li>
+    <li> <p>ESBJERG</p> </li>
+    <li> <p>KØBENHAVN</p> </li>
+    <li> <p>KØGE</p> </li>
+  
+    </ul class="padding-left">
+    <ul>
+    <li> <p>ODENSE</p> </li>
+    <li> <p>RANDERS</p> </li>
+    <li> <p>MIDTSJÆLLAND</p> </li>
+    <li> <p>SLAGELSE</p> </li>
+    <li> <p>VEJLE</p> </li>
+    
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="footer-link-container">
+       <div class="footer-link"> <img src="/sm-icons/mail-podcast.png" alt="Mail"></div>
+       <div class="footer-link"> <img src="/sm-icons/spotify-podcast.png" alt="Spotify"></div>
+       <div class="footer-link"> <img src="/sm-icons/youtube-podcast.png" alt="Youtube"></div>
+       <div class="footer-link"> <img src="/sm-icons/facebook-podcast.png" alt="Facebook"></div>
+       <div class="footer-link"> <img src="/sm-icons/instagram-podcast.png" alt="Instagram"></div>
+       <div class="footer-link"> <img src="/sm-icons/twitter-podcast.png" alt="Twitter"></div>
+    </div>
+    </footer>
 
 </body>
 </html>

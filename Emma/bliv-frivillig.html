@@ -11,7 +11,7 @@
   <title>Red Barnet Ungdom - Bliv Frivillig</title>
 </head>
 <body>
-  <!--Navigationsbar-->
+
   <header>
     <!-- Megamenu Web -->
     <div class="top-menu">
@@ -79,29 +79,53 @@
             <li class="nav-item"><a href="#">Webshop</a></li>
             <li class="nav-item"><a href="#">Om os</a></li>
             <li><button class="nav-button">Støt børnene</button></li>
-            <!--Søgefelt-->
-    <div class="search-box">
-      <input type="text" id="input" onkeyup="searchFunction()" placeholder="Søg..." title="søgefelt">
-            <ul id="UL">
-                <li><a href="#">frivillig</a></li>
-                <li><a href="#">bliv friviilig</a></li>
-                <li><a href="#">podcast</a></li>
-                <li><a href="#">støt</a></li>
-            </ul>
-        <div class="search-btn">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
-   
-    <script src="search.js"></script>
-      <!--Søgefelt slut-->
-        </ul>
-    </nav>
-  </header>  
+          </ul>
+        </nav> 
+  <!--Søgefelt-->
+  <div class="search-box">
+    <input type="text" id="input" onkeyup="searchFunction()" placeholder="Søg..." title="søgefelt">
+          <ul id="UL">
+              <li><a href="#">frivillig</a></li>
+              <li><a href="#">bliv friviilig</a></li>
+              <li><a href="#">podcast</a></li>
+              <li><a href="#">støt</a></li>
+          </ul>
+      <div class="search-btn">
+          <i class="fas fa-search"></i>
+      </div>
+      <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+      </div>
+  </div>
+ 
+  <script src="search.js"></script>
 
+  <!--Burgermenu fra 1200px--> 
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="index.html">
+    <img src="/forside-billeder/LogoRedBarnetUngdom.png" alt="Logo" class="logo" width="250"></a>
+      <input type="checkbox" name="Menu" id="Menu">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+          <li class="forside-nav"><a href="bliv-frivillig.html">Bliv Frivillig</a></li>
+          <li><a href="#">Bliv medlem</a></li>
+          <li class="podcast"><a href="#">Podcast<i class='bx bx-chevron-down mobil-ikon'></i></a></li>
+                        <li><a href="podcast.html">Nyheder</a></li>
+                        <li><a href="podcast-episoder.html">Lyt her</a></li>
+          
+          <li><a href="#">Webshop</a></li>
+          <li><a href="#">Om os</a></li>
+        
+          <li><h5 class="knapbla">Støt børnene</h5></li>
+        </ul>
+  </div>
+</nav>
+</header> 
 <!-- HERO-BANNER -->
 <section>
   <div class="farve1">
@@ -151,7 +175,7 @@
             <p>Du bliver tilbudt relevant uddannelse</p>
           </div>
 </section>
-
+<div class="whitespace"></div>
 <!-- Aktiviteter Red barnet -->
   <div class="farve2">
     <section class="section-3">
@@ -187,12 +211,12 @@
     </section>
   </div>
 
-
+  <div class="whitespace"></div>
           
 <!-- slideshow -->
 
 <section>
-  <h2 class="slideshowh2">Hvordan kan du hjælpe?</h2>
+  <h3 class="slideshowh3">Hvordan kan du hjælpe?</h3>
   <div class="wrapper"> 
     <i id="left" class="fa-solid fa-angle-left"></i>
   <div class ="carousel1">
@@ -252,6 +276,7 @@
   <script src="slideshow.js" defer></script>
 </section>
 
+<div class="whitespace"></div>
 <section id="formular">
   <form action="thank-you.html">
     <h2>Tilmeld dig som frivillig her</h2>
@@ -293,51 +318,51 @@
               class="radio"
               id="Lektievenner"
               name="category"
-            />
+            >
             <label for="Lektievenner">Lektievenner</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Læringscafeer" name="category"/>
+            <input type="radio" class="radio" id="Læringscafeer" name="category">
             <label for="Læringscafeer">Læringscafeer</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Mobsquad" name="category"/>
+            <input type="radio" class="radio" id="Mobsquad" name="category">
             <label for="Mobsquad">Mobsquad</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Springbrættet" name="category"/>
+            <input type="radio" class="radio" id="Springbrættet" name="category">
             <label for="Springbrættet">Springbrættet</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Studievenner" name="category"/>
+            <input type="radio" class="radio" id="Studievenner" name="category">
             <label for="Studievenner">Studievenner</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Børn-på-asylcentre" name="category"/>
+            <input type="radio" class="radio" id="Børn-på-asylcentre" name="category">
             <label for="Børn-på-asylcentre">Børn på asylcentre</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Velkomstvenner" name="category"/>
+            <input type="radio" class="radio" id="Velkomstvenner" name="category">
             <label for="Velkomstvenner">Velkomstvenner</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Teengrupper" name="category"/>
+            <input type="radio" class="radio" id="Teengrupper" name="category">
             <label for="Teengrupper">Teengrupper</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Weekendcamps" name="category"/>
+            <input type="radio" class="radio" id="Weekendcamps" name="category">
             <label for="Weekendcamps">Weekendcamps</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Barnets-ven" name="category"/>
+            <input type="radio" class="radio" id="Barnets-ven" name="category">
             <label for="Barnets-ven">Barnets ven</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Børn-på-krisecentre" name="category"/>
+            <input type="radio" class="radio" id="Børn-på-krisecentre" name="category">
             <label for="Børn-på-krisecentre">Børn på krisecentre</label>
           </div>
           <div class="option">
-            <input type="radio" class="radio" id="Lokalforeninger" name="category"/>
+            <input type="radio" class="radio" id="Lokalforeninger" name="category">
             <label for="Lokalforeninger">Lokalforeninger</label>
           </div>
         </div>
@@ -354,7 +379,7 @@
 <script src="formular.js" defer></script>
 
 
-
+<div class="whitespace"></div>
 
           <section>
             <h2 class="section-4h2">Mød vores frivillige</h2>
@@ -395,5 +420,65 @@
             </div>
           </div>
           </section>
+  
+          <footer>
+            <div class="footer-content-container">
+            <div class="footer-upper">
+            <div class="footer-content">
+            <h2>Kontakt os</h2>
+            <h4>Redbarnet ungdom</h4>
+            <ul>
+            <li> <p>Rosenørs allé 12</p> </li>
+            <li> <p>DK-1634 København V</p> </li>
+            <li> <p>CVR nr.: 27 33 66 04 </p> </li>
+            
+            
+            <li>Tlf nr.: 35 24 85 42</li>
+            </ul>
+            </div>
+            <div class="footer-content1">
+            <h2>Kig forbi</h2>
+            <h4>Sekretariatet</h4>
+            <ul>
+            <li> <p>Rosenørns Allé 12, st.</p> </li>
+            <li> <p>1634 København V</p> </li>
+            </ul>
+            <h4>Sekretariatet</h4>
+            <ul>
+            <li> <p>Frederiksgade 76A, 1. sal</p> </li>
+            <li> <p>8000 Århus C</p> </li>
+            </ul>
+            </div>
+            </div>
+            <div class="footer-content">
+            <h2>Lokalforeninger</h2>
+            <div class="footer-inner-content">
+            <ul class="padding-right">
+            <li> <p>NORDJYLLAND</p> </li>
+            <li> <p>ÅRHUS</p> </li>
+            <li> <p>AMAGER</p> </li>
+            <li> <p>ESBJERG</p> </li>
+            <li> <p>KØBENHAVN</p> </li>
+            <li> <p>KØGE</p> </li>
+            </ul>
+            <ul>
+            <li> <p>ODENSE</p> </li>
+            <li> <p>RANDERS</p> </li>
+            <li> <p>MIDTSJÆLLAND</p> </li>
+            <li> <p>SLAGELSE</p> </li>
+            <li> <p>VEJLE</p> </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            <div class="footer-link-container">
+               <div class="footer-link"> <img src="/sm-icons/mail.png" alt="Mail"></div>
+               <div class="footer-link"> <img src="/sm-icons/Spotify.png" alt="Spotify"></div>
+               <div class="footer-link"> <img src="/sm-icons/Youtube.png" alt="Youtube"></div>
+               <div class="footer-link"> <img src="/sm-icons/Facebook.png" alt="Facebook"></div>
+               <div class="footer-link"> <img src="/sm-icons/instagram.png" alt="Instagram"></div>
+               <div class="footer-link"> <img src="/sm-icons/twitter.png" alt="Twitter"></div>
+            </div>
+            </footer> 
 </body>
 </html>

@@ -81,6 +81,8 @@
           <li class="nav-item"><a href="#">Webshop</a></li>
           <li class="nav-item"><a href="#">Om os</a></li>
           <li><button class="nav-button">Støt børnene</button></li>
+        </ul>
+      </nav>
            <!--Søgefelt-->
     <div class="search-box">
       <input type="text" id="input" onkeyup="searchFunction()" placeholder="Søg..." title="søgefelt">
@@ -100,8 +102,31 @@
    
     <script src="search.js"></script>
       <!--Søgefelt slut-->
-      </ul>
-  </nav>
+  
+
+<!--Burgermenu fra 1200px--> 
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="podcast.html">
+    <img src="/podcastforside-billeder/logovehs.png" alt="Logo" class="logo" width="250"></a>
+      <input type="checkbox" name="Menu" id="Menu">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+          <li class="forside-nav"><a href="bliv-frivillig.html">Bliv Frivillig</a></li>
+          <li><a href="#">Bliv medlem</a></li>
+          <li class="podcast"><a href="#">Podcast<i class='bx bx-chevron-down mobil-ikon'></i></a></li>
+          <li><a href="podcast.html">Nyheder</a></li>
+          <li><a href="podcast-episoder.html">Lyt her</a></li>
+          <li><a href="#">Webshop</a></li>
+          <li><a href="#">Om os</a></li>
+          <li><h5 class="knapbla">Støt børnene</h5></li>
+        </ul>
+  </div>
+</nav>
 </header>  
 
 <!-- Herobanner-Podcast -->
@@ -120,6 +145,7 @@
  </div>
 </section>
 
+<div class="whitespace"></div>
 <!--Nyheder Podcast-->
 <section class="nyheder">
   <h2 class="nyheder">Nyheder</h2>
@@ -142,7 +168,7 @@
 </div>
 <a href="xxx" class="knapbla nyhederknap">SE FLERE NYHEDER</a>
 </section>
-
+<div class="whitespace"></div>
 <!--Følg os på instagram-->
 <section>
   <div class="farve1">
@@ -160,6 +186,7 @@
 </div>
 </div>
 </section>
+
 
 <!--Mød vores værter-->
 <div class="container">
@@ -194,8 +221,9 @@
     <img src="/podcastforside-billeder/stine.png" class="stine" alt="Stine">
   </div>
 </div>
+<script src="modvaerter.js"></script>
 
-
+<div class="whitespace"></div>
 
 <!--Vil du være frivillig?-->
 <section>
@@ -213,7 +241,7 @@
 </div>
 </div>
 </section>
-
+<div class="whitespace"></div>
 <!--Om Podcasten-->
 <section>
 <div class="ompodcast-overskrift">
@@ -231,6 +259,65 @@
       <br> Vi håber I har lyst til at lytte med og blive en del af fællesskabet! </p>
   </div>
 </section>
+<footer>
+  <div class="footer-content-container">
+  <div class="footer-upper">
+  <div class="footer-content">
+  <h2>Kontakt os</h2>
+  <h4>Redbarnet ungdom</h4>
+  <ul>
+  <li> <p>Rosenørs allé 12</p> </li>
+  <li> <p>DK-1634 København V</p> </li>
+  <li> <p>CVR nr.: 27 33 66 04 </p> </li>
+  
+  <li> <br>Tlf nr.: 35 24 85 42</br> </li>
+  </ul>
+  </div>
+  <div class="footer-content1">
+  <h2>Kig forbi</h2>
+  <h4>Sekretariatet</h4>
+  <ul>
+  <li> <p>Rosenørns Allé 12, st.</p> </li>
+  <li> <p>1634 København V</p> </li>
+  </ul>
+  <h4>Sekretariatet</h4>
+  <ul>
+  <li> <p>Frederiksgade 76A, 1. sal</p> </li>
+  <li> <p>8000 Århus C</p> </li>
+  </ul>
+  </div>
+  </div>
+  <div class="footer-content">
+  <h2>Lokalforeninger</h2>
+  <div class="footer-inner-content">
+  <ul class="padding-right">
+  <li> <p>NORDJYLLAND</p> </li>
+  <li> <p>ÅRHUS</p> </li>
+  <li> <p>AMAGER</p> </li>
+  <li> <p>ESBJERG</p> </li>
+  <li> <p>KØBENHAVN</p> </li>
+  <li> <p>KØGE</p> </li>
 
+  </ul class="padding-left">
+  <ul>
+  <li> <p>ODENSE</p> </li>
+  <li> <p>RANDERS</p> </li>
+  <li> <p>MIDTSJÆLLAND</p> </li>
+  <li> <p>SLAGELSE</p> </li>
+  <li> <p>VEJLE</p> </li>
+  
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="footer-link-container">
+     <div class="footer-link"> <img src="/sm-icons/mail-podcast.png" alt="Mail"></div>
+     <div class="footer-link"> <img src="/sm-icons/spotify-podcast.png" alt="Spotify"></div>
+     <div class="footer-link"> <img src="/sm-icons/youtube-podcast.png" alt="Youtube"></div>
+     <div class="footer-link"> <img src="/sm-icons/facebook-podcast.png" alt="Facebook"></div>
+     <div class="footer-link"> <img src="/sm-icons/instagram-podcast.png" alt="Instagram"></div>
+     <div class="footer-link"> <img src="/sm-icons/twitter-podcast.png" alt="Twitter"></div>
+  </div>
+  </footer>
 </body>
 </html>

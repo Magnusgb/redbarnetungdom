@@ -1,6 +1,7 @@
 * {
   margin: 0;
   border: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +14,7 @@ h2 {
   color: #F7F7F7;
   }
       
-h3 { 
+h3,h5 { 
   Font-family: futura-pt, sans-serif; 
   font-weight: 600; 
   font-style: normal; 
@@ -63,11 +64,17 @@ a {
     color:#FFF9A5;
     font-size: 20px;
     margin-top: 20px;
+    text-align: center;
     }
 
 .knapbla:hover {
     transform: scale(1.1);
     }   
+   
+@media (min-width: 1024px) {
+  .whitespace {
+    height: 50px;
+}}
   
 /* Megamenu Web*/
 
@@ -258,6 +265,7 @@ color: #FFF9A5;
 .nav-item-dropdown:hover .sub-menu2 h3 {
   color: #080357;
 }
+
 .CTA-2 h2 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
@@ -307,6 +315,180 @@ color: #FFF9A5;
   transform: scale(1.1); 
   } 
 
+@media (max-width:1200px) {
+  .search-box {
+    display: none;
+  }
+}
+
+  /* Burgermenu */
+@media screen and (min-width: 1200px){
+  .navbar{
+    display: none;
+}
+
+/*farver på hover, active og hvilken side man befinder sig på af knapper i nav*/
+.menu a:hover
+    {color: #080357;}
+
+.menu a:active
+    {color: #080357;}
+
+body#forside .forside-nav
+    {color: #080357}
+
+body#portfolio .portfolio-nav
+    {color: #080357}    
+
+body#om-mig .om-mig-nav
+    {color: #080357}  
+
+body#kontakt .kontakt-nav
+    {color: #080357}  
+}
+
+@media screen and (max-width: 1200px){
+  .navigation{
+    display: none;
+    
+  
+}
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  /*hele nav baren*/
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 67px;
+  }
+
+  /*checkboxen, der er skjult*/
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 12px;
+    left: 18px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+/*selve burgermenuen*/
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*linjerne i burgermenuen*/
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  /*menuen der kommer frem, når man trykker på burgermenuen*/
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #f7f7f7;
+    opacity: 95%;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /*links*/
+  .navbar .menu-items a {
+    font-family: futura-pt, sans-serif; 
+    font-weight: 500; 
+    font-style: normal; 
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  /*listen*/
+  .navbar .menu-items li{
+    list-style: none;
+    padding: 4px 0px;
+  }
+
+.menu-items a:hover
+    {color: #080357;}
+
+.menu-items a:active
+    {color: #080357;}
+
+body#forside .forside-nav
+    {color: #080357}
+
+body#portfolio .portfolio-nav
+    {color: #080357}    
+
+body#om-mig .om-mig-nav
+    {color: #080357}  
+
+body#kontakt .kontakt-nav
+    {color: #080357}  
+
+  .logo {
+    position: absolute;
+    top: 45px;
+    right: 15px;  
+  }
+
+  /*når checkboxen er checked*/
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+}
+
 /*HERO-BANNER styling*/
 @media (min-width: 768px) {
 .section-container {
@@ -352,28 +534,30 @@ color: white;
 }
 
 @media (max-width: 768px){
-  .section-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    gap: 30px;
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 30px;
+  background-color:#080357; 
+  height:80vh;
   }
   
-  .herobanner-tekst  {
-    font-family: futura-pt, sans-serif; 
-    font-weight: 400; 
-    font-style: normal; 
+.herobanner-tekst1  {
+  font-family: futura-pt, sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  font-size: 10px;
   }
- 
-
-.text-button button { 
-  margin-top: 20px;   
+.text-button { 
+  margin-top:-20px;
+  margin-right: 70px;
 }
 
-.farve1 {
-  background-color: #080357;
-  height: auto;
+.text-button a { 
+  margin-top: 20px;  
+  margin-left: 20px;
 }
 
 .image img {
@@ -383,11 +567,12 @@ color: white;
  margin: auto;
 }
 
-.herobanner-tekst {
+.herobanner-tekst1 {
   text-align: start;
   font-size: 30px; 
 }
 }
+
 /*Nyheder Forside*/
 
 .nyheder{
@@ -475,7 +660,6 @@ color: white;
 @media (min-width: 1024px) {
   .nyheder{
       font-size: 50px;
-      margin-bottom: 70px;
   }
 
   .image-container-nyheder{
@@ -500,13 +684,17 @@ color: white;
   }
 }
 
-/*Instagram feed*/
-
+/*Instagram feed*/ 
 @media (max-width: 768px) {
 .sektion {
 display: flex;
 flex-direction: column; 
 max-width: 410px;
+}
+
+.farve1 {
+  height: auto;
+  background-color: #080357;
 }
 
 .farve1, .sektion {
@@ -623,7 +811,6 @@ height: 100px;
 @media (min-width: 768px) {
 }
 #sektion-frivillig-web {
-  display: flex;
   flex-direction: row-reverse;
 }
 
@@ -646,39 +833,45 @@ height: 100px;
 .container, button {
 text-align: center;
 
-
 }
 
 .ompodcast-overskrift{
-margin-left: 130px;
+margin-left: 120px;
 margin-top: 25px;
 margin-bottom: 25px;
 }
 
 .ompodcast-overskrift h2{
 color: #080357;
-
 }
 
+ 
 .podcast-paragraf{
-padding-left: 130px;
-padding-right: 130px;
+max-width: 1200px;
 margin: 0 auto;
 }
 
+
+@media (max-width:768px) {
+  .podcast-paragraf {
+    max-width: 320px;
+  }
+
+.ompodcast-overskrift h2 {
+  margin-left: -110px
+}
+}
+
 /* Mød dine værter */
-
-
-
 .container1 h2 {
 font-weight: 400;
 line-height: 1.4;
 margin: 10px 0px;
 color: #080357;
-font-size: 22px;
+font-size: 30px;
 font-family: "futura-pt", sans-serif;
-font-style: italic;
-font-weight: 700;
+font-style: normal;
+font-weight: 500;
 }
 
 .container1 h3 {
@@ -696,7 +889,7 @@ font-weight: 400;
 line-height: 1.4;
 margin: 10px 0px;
 color: #080357;
-font-size: 22px;
+font-size: 30px;
 font-family: "futura-pt", sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -763,7 +956,6 @@ display: none;
 
 /* Tablets and under */
 @media (max-width: 768px) {
-.grid,
 .showcase .grid,
 .stats .grid,
 .cli .grid,
@@ -851,7 +1043,7 @@ flex-direction: row;
 
 .container {
 max-width: 1200px;
-margin: 0 auto;
+margin: 50px auto;
 overflow: auto;
 padding: 0 40px;
 }
@@ -876,6 +1068,7 @@ align-items: center;
 height: 100%;
 }
 
+@media (min-width:1024px) {
 .grid {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -883,6 +1076,7 @@ gap: 20px;
 justify-content: center;
 align-items: center;
 height: 100%;
+}
 }
 
 .grid-3 {
@@ -1052,9 +1246,7 @@ transform: translateY(-50%) rotate(360deg);
 margin-top: 40px;
 }
 
-
 /* Search filter */ 
-
 #input{
 background-position: 10px 12px; /* styles for input */
 background-repeat: no-repeat;
@@ -1095,3 +1287,122 @@ background-color:#f7f7f7;
 #input:focus + #UL, #input:not(:empty) + #UL{ /* styles for at søgelisten kommer frem ved at trykke på søgefeltet*/
 opacity: 1;
 }
+
+.text-center h1 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+/* Podcast video*/
+.iframe-container iframe {
+  width: 560px;
+  height: 315px;
+}
+
+/* Footer */
+footer h2 {
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 10px 0px;
+  color: white;
+  font-size: 22px;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  width: auto;
+}
+footer h4 {
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 15px 0px;
+  color: white;
+  font-size: 18px;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+}
+
+
+.footer-content1 {
+  text-align: left; /* Tilføj denne linje for at centrere indholdet */
+ }
+ 
+ /* Hvis du ønsker at styre bredden af "Kig forbi" sektionen, kan du bruge følgende CSS-regel */
+ .footer-content1 {
+  max-width: 300px; /* Juster bredden efter behov */
+  margin:  0 auto; /* Centrer indholdet horisontalt */
+ }
+ 
+ .padding-left{
+  font-weight: bold;
+ }
+ footer {
+margin-top: 100px;
+ width: 100%;
+ background-color: #080357;
+ }
+
+ footer p {
+  color: white;
+ }
+
+ footer ul li {
+ list-style-type: none;
+ list-style-position: inside;
+ margin: 0;
+ padding: 0;
+ }
+
+ .footer-content-container {
+ display: flex;
+ justify-content: space-between;
+ color: #ffffff
+ }
+
+ .footer-upper {
+ display: flex;
+ width: 100%;
+ justify-content: space-around;
+ }
+
+ .footer-inner-content {
+ display: flex;
+ margin-right: 20px;
+ font-weight: bold;
+ font-size: 15px;
+ }
+
+ .footer-link-container {
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 30px;
+ height: 60px; /* Ændrer højden til 50px */
+ /* Normal stil for logo */
+ transition: transform 0.3s; /* Tilføj en glidende overgangseffekt */
+ }
+
+ /* Stil for logo ved hover */
+ .footer-link:hover {
+ transform: scale(1.1); /* Ændrer størrelsen til 110% af original størrelse ved hover */
+ }
+
+ .padding-right {
+ padding-right: 20px ;
+ font-weight: bold;
+ transition: transform 0.3s; /* Tilføj en glidende overgangseffekt */
+ }
+
+ @media screen and (max-width: 600px) {
+ .footer-content-container {
+ flex-direction: column;
+ }
+
+ .footer-upper {
+ justify-content: space-between;
+ }
+ 
+ .footer-link {
+ width: 50px;
+ height: 50px;
+ }
+ }
+ 
