@@ -552,7 +552,7 @@ color: white;
   }
 .text-button { 
   margin-top:-20px;
-  margin-right: 70px;
+  margin-right: 90px;
 }
 
 .text-button a { 
@@ -845,6 +845,10 @@ margin-bottom: 25px;
 color: #080357;
 }
 
+.podcast-paragraf, .ompodcast-overskrift {
+  text-align: left;
+}
+
  
 .podcast-paragraf{
 max-width: 1200px;
@@ -859,7 +863,7 @@ line-height: 1.8;
   }
 
 .ompodcast-overskrift h2 {
-  margin-left: -110px
+  margin-left: -100px
 }
 }
 
@@ -909,6 +913,12 @@ font-size: 16px;
 .h2overskrift-varter h2 {
 font-size: 50px;
 margin-top: 50px;
+}
+
+@media (max-width:768px) {
+.h2overskrift-varter h2 {
+  font-size: 24px;
+}
 }
 
 .container img {
@@ -1041,10 +1051,9 @@ display: none;
 flex-direction: row;
 }
 
-
 .container {
 max-width: 1200px;
-margin: 50px auto;
+margin: auto;
 overflow: auto;
 padding: 0 40px;
 }
@@ -1172,7 +1181,6 @@ width: 60px;
 position: absolute;
 top: 20px;
 right: 50px;
-transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
 }
 
 
@@ -1194,7 +1202,6 @@ border-radius: 50px;
 padding: 0 60px 0 20px ;
 opacity: 0;
 margin-left: -20px;
-transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
 }
 
 .search-box input.active{ 
@@ -1238,7 +1245,6 @@ transform: translateY(-50%);
 color:#E0D4F1;
 font-size: 25px;
 cursor: pointer;
-transition: all 0.5s 0.2s cubic-bezier(0.68,-0.55, 0.265, 1,55)
 }
 
 .search-box .cancel-btn.active{ /* styles for krydset når det er aktivt */
@@ -1366,7 +1372,7 @@ footer h4 {
  .footer-content-container {
  display: flex;
  justify-content: space-between;
- color: #ffffff
+ color: #ffffff;
  }
 
  .footer-upper {
@@ -1414,6 +1420,7 @@ padding-right:10px;
  @media screen and (max-width: 600px) {
  .footer-content-container {
  flex-direction: column;
+ margin: 0 12px;
  }
 
  .footer-upper {

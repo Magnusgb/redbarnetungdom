@@ -1438,7 +1438,6 @@ font-size: 40px;
   position: absolute;
   top: 20px;
   right: 50px;
-  transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
 }
 
 .search-box.active{  /* længde på søgefletet når det er aktivt */
@@ -1463,7 +1462,6 @@ font-size: 40px;
   padding: 0 60px 0 20px ;
   opacity: 0;
   margin-left: -20px;
-  transition: all 0.5s cubic-bezier(0.68,-0.55, 0.265, 1,55);
 }
 
 .search-box input.active{ 
@@ -1507,7 +1505,6 @@ margin-top: 37px;
   color:#080357;
   font-size: 25px;
   cursor: pointer;
-  transition: all 0.5s 0.2s cubic-bezier(0.68,-0.55, 0.265, 1,55)
 }
 
 .search-box .cancel-btn.active{ /* styles for krydset når det er aktivt */
@@ -1652,6 +1649,7 @@ transition: transform 0.3s; /* Tilføj en glidende overgangseffekt */
 @media screen and (max-width: 600px) {
 .footer-content-container {
 flex-direction: column;
+margin: 0 12px;
 }
 
 .footer-upper {
