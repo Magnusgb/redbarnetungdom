@@ -1,13 +1,13 @@
 // Opret arrays med stier til billeder
 let magnusImages = [
-  "/podcastforside-billeder/magnusvaert.png",
-  "/podcastforside-billeder/magnus-js-billede.png"
+  "podcastforside-billeder/magnusvaert.png",
+  "podcastforside-billeder/magnus-js-billede.png"
  ];
  
  
  let stineImages = [
-  "/podcastforside-billeder/stine.png",
-  "/podcastforside-billeder/stine-js-billede.jpg"
+  "podcastforside-billeder/stine.png",
+  "podcastforside-billeder/stine-js-billede.jpg"
  ];
  
  
