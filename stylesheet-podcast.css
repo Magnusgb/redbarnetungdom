@@ -1299,6 +1299,17 @@ opacity: 1;
   height: 315px;
 }
 
+@media (max-width:1024px) {
+
+  .iframe-container iframe {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+
 /* Footer */
 footer h2 {
   font-weight: 300;
@@ -1336,7 +1347,7 @@ footer h4 {
   font-weight: bold;
  }
  footer {
-margin-top: 100px;
+  margin-top: 100px;
  width: 100%;
  background-color: #080357;
  }
@@ -1345,9 +1356,8 @@ margin-top: 100px;
   color: white;
  }
 
- footer ul li {
- list-style-type: none;
- list-style-position: inside;
+ footer ul {
+ list-style: none;
  margin: 0;
  padding: 0;
  }
@@ -1361,6 +1371,7 @@ margin-top: 100px;
  .footer-upper {
  display: flex;
  width: 100%;
+ margin-left: 120px;
  justify-content: space-around;
  }
 
@@ -1386,9 +1397,17 @@ margin-top: 100px;
  }
 
  .padding-right {
- padding-right: 20px ;
+ padding:0;
  font-weight: bold;
  transition: transform 0.3s; /* Tilføj en glidende overgangseffekt */
+ }
+
+ .footer-content {
+  margin-right: 120px;
+ }
+
+ .footer-content ul {
+padding-right:10px;
  }
 
  @media screen and (max-width: 600px) {
@@ -1404,5 +1423,10 @@ margin-top: 100px;
  width: 50px;
  height: 50px;
  }
+
+.footer-upper {
+  margin: 0;
+}
+
  }
  
