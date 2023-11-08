@@ -561,11 +561,6 @@ body#kontakt .kontakt-nav
     text-align: center;
 }
 
-
-.image-container-med-knap img{
-  width: 320px;
-}
-
 .image-med-knap{
     position: relative;
     display: flex;
@@ -723,7 +718,7 @@ body#kontakt .kontakt-nav
   .sektion-cta {
     display: flex; 
     align-items: center;
-    max-width: 1130px;
+    max-width: 1250px;
     gap: 50px;
   }
   
@@ -772,22 +767,31 @@ body#kontakt .kontakt-nav
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nyheder-container img {
+  width:450px;
+  margin: auto;
+}
+
+.nyheder-container img:first-child {
+  margin-right: -20px;
 }
 
 .image-container-nyheder{
   text-align: center; 
   align-items: center;
   flex-direction: column;
-  max-width: 320px;
   margin: 0 auto;
+  
 }
 
 .image-container-nyheder img{
   display:block;
-  width:100%;
-  height: auto;
-  justify-content: center;
+  max-width: 500px;
+  margin: auto;
 }
 
 .nyheder-container .image-container-nyheder{
