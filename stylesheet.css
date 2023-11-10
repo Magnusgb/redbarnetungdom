@@ -594,6 +594,14 @@ width: 320px;
   margin-top: -20px;
 }
 
+.billeder-knap  {
+  padding: 0.7rem;
+}
+
+.billeder-knap:hover{
+  color: white;
+}
+
 
 .billeder-knap:hover {
 transform: scale(1.1);
@@ -1168,14 +1176,14 @@ form small {
  display: flex;
  scroll-behavior: smooth;
  overflow: hidden;
- max-width: 1250px;
+ max-width: 1200px;
  margin: auto;
 }
 .carousel1 img {
  height: 320px;
  object-fit: cover;
  width: auto;
- padding: 0px 17px 17px;
+ 
 }
 
 .carousel1 h2 {
@@ -1207,7 +1215,7 @@ display: none;
 margin-bottom: 110px;
 }
 .wrapper i:last-child{
-  right: 70px;
+  right: 90px;
   margin-top: 130px;
  
 }
@@ -1266,14 +1274,15 @@ margin-bottom: 110px;
     }
     .slide h2{
       max-width: 300px;
-     margin-top: -10px;
+     margin-top: 5px;
+     margin-left: 0;
     }
     .slide p{
       max-width: 300px;
+      margin-left: 0;
     }
 
     .slideshowh3 {
-   
       margin-left: 10px;
       margin-top: 50px;
       font-size:30px;
